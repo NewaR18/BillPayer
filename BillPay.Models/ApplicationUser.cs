@@ -17,5 +17,9 @@ namespace BillPay.Models
         public char Gender { get; set; }
         [ValidateNever]
         public string ImageURL { get; set; } = "";
+        [ValidateNever]
+        public string? EsewaName { get; set; } 
+        [ValidateNever]
+        public string? EsewaPhone { get; set; } 
     }
 }

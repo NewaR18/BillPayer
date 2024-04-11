@@ -293,3 +293,4 @@ C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\refint
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\BillPayer.pdb
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\BillPayer.genruntimeconfig.cache
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\ref\BillPayer.dll
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll

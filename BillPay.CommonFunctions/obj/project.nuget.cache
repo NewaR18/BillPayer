@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "OWmO6mi0BnY83AEmVZEPFJP2wqhdhiSuVuWw7ppYwncVQ6sfYZKVGk4hUdierqs829JFtygoRQJnrZEmDRzODg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.CommonFunctions\\BillPay.CommonFunctions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sudip.shrestha\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\sudip.shrestha\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\sudip.shrestha\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\sudip.shrestha\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -14,6 +14,7 @@ namespace BillPay.DataAccess.Repository.IRepository
         public IMenuRepo MenuRepo { get; }
         public IProductDetailsRepo ProductDetailsRepo { get; }
         public IBhukkadsRepo BhukkadsRepo { get; }
+        public IHomeRepo HomeRepo { get; }
         void Save();
 		void BeginTransaction();
 		void CommitTransaction();

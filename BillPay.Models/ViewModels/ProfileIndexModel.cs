@@ -30,5 +30,11 @@ namespace BillPay.Models.ViewModels
         [Display(Name = "Image")]
         [ValidateNever]
         public string ImageURL { get; set; }
+        [ValidateNever]
+        [Display(Name = "Name in Esewa")]
+        public string? EsewaName { get; set; }
+        [ValidateNever]
+        [Display(Name = "Esewa Phone Number")]
+        public string? EsewaPhone { get; set; }
     }
 }

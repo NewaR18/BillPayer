@@ -5,12 +5,40 @@
       "PackagePath": "staticwebassets\\BillPayer.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Designs\\Expenses.png",
+      "PackagePath": "staticwebassets\\Images\\Designs\\Expenses.png"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Designs\\LastPaymentDate.png",
+      "PackagePath": "staticwebassets\\Images\\Designs\\LastPaymentDate.png"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Designs\\PaymentDue.png",
+      "PackagePath": "staticwebassets\\Images\\Designs\\PaymentDue.png"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Designs\\ToReceive.png",
+      "PackagePath": "staticwebassets\\Images\\Designs\\ToReceive.png"
+    },
+    {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Users\\5b6a75de-a693-48f9-a6c6-fa9833bba731.jpg",
       "PackagePath": "staticwebassets\\Images\\Users\\5b6a75de-a693-48f9-a6c6-fa9833bba731.jpg"
     },
     {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Users\\d86d61a0-2432-433e-a160-caf3314255fe.jpg",
+      "PackagePath": "staticwebassets\\Images\\Users\\d86d61a0-2432-433e-a160-caf3314255fe.jpg"
+    },
+    {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\css\\BillCreate.css",
       "PackagePath": "staticwebassets\\css\\BillCreate.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\css\\Home\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Home\\Index.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\css\\MainMenu\\default.css",
+      "PackagePath": "staticwebassets\\css\\MainMenu\\default.css"
     },
     {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\css\\site.css",
@@ -53,6 +81,14 @@
       "PackagePath": "staticwebassets\\js\\DeleteTDrow.js"
     },
     {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Home\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Home\\Index.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Home\\payDetails.js",
+      "PackagePath": "staticwebassets\\js\\Home\\payDetails.js"
+    },
+    {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\customer.js",
       "PackagePath": "staticwebassets\\js\\customer.js"
     },
@@ -73,6 +109,10 @@
       "PackagePath": "staticwebassets\\lib\\CSS\\bootstrap-icons.css"
     },
     {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\CSS\\feather.css",
+      "PackagePath": "staticwebassets\\lib\\CSS\\feather.css"
+    },
+    {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\CSS\\jquery.dataTables.min.css",
       "PackagePath": "staticwebassets\\lib\\CSS\\jquery.dataTables.min.css"
     },
@@ -81,8 +121,24 @@
       "PackagePath": "staticwebassets\\lib\\CSS\\select2.min.css"
     },
     {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\Fontawesome\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\Fontawesome\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\Fontawesome\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\Fontawesome\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\feather.min.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\feather.min.js"
+    },
+    {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\jquery.dataTables.min.js",
       "PackagePath": "staticwebassets\\lib\\JS\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\jquery.slimscroll.min.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\jquery.slimscroll.min.js"
     },
     {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\moment.min.js",
@@ -91,6 +147,10 @@
     {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\platform.js",
       "PackagePath": "staticwebassets\\lib\\JS\\platform.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\script.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\script.js"
     },
     {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\select2.min.js",

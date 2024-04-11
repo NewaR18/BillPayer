@@ -379,6 +379,12 @@ namespace BillPay.DataAccess.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("EsewaName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EsewaPhone")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Gender")
                         .IsRequired()
                         .HasColumnType("nvarchar(1)");

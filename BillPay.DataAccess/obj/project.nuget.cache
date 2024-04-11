@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fCGjMrzH+VN1Z0tkUaIVubCyADmrD+EKWcTzqWCyOeQPKe/kmuMj/s+stQLO94CB01ko8v+R0KmQ3oD/2dOfvA==",
+  "dgSpecHash": "L7T1zdGX81JQZDSf4iqMJT18cDp/IoTJ+ssxfU35ruXNaGDRcANcg9IQE1jpuNpRXRcVCKvwwIADLoZqp1qM1A==",
   "success": true,
   "projectFilePath": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.DataAccess\\BillPay.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,7 @@
     "C:\\Users\\sudip.shrestha\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.16\\microsoft.entityframeworkcore.sqlserver.7.0.16.nupkg.sha512",
     "C:\\Users\\sudip.shrestha\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\sudip.shrestha\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\sudip.shrestha\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\sudip.shrestha\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\sudip.shrestha\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\sudip.shrestha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",

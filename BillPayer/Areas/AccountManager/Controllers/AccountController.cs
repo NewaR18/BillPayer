@@ -394,7 +394,9 @@ namespace BillPayer.Areas.AccountManager.Controllers
                 Address = user.Address,
                 Gender = user.Gender,
                 PhoneNumber = user.PhoneNumber,
-                ImageURL = user.ImageURL
+                ImageURL = user.ImageURL,
+                EsewaName = user.EsewaName,
+                EsewaPhone = user.EsewaPhone
             };
             return View(profileData);
         }
@@ -430,6 +432,8 @@ namespace BillPayer.Areas.AccountManager.Controllers
                 user.Address = profileData.Address;
                 user.Gender = profileData.Gender;
                 user.PhoneNumber = profileData.PhoneNumber;
+                user.EsewaName = profileData.EsewaName?.Trim();
+                user.EsewaPhone = profileData.EsewaPhone?.Trim();
                 var result = await _userManager.UpdateAsync(user);
                 if (result.Succeeded)
                 {
