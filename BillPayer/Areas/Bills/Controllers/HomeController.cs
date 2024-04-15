@@ -2,6 +2,7 @@
 using BillPay.Models;
 using BillPay.Models.ViewModels.Home;
 using BillPayer.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using System.Diagnostics;
 namespace BillPayer.Areas.Bills.Controllers
 {
     [Area("Bills")]
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -25,18 +27,20 @@ namespace BillPayer.Areas.Bills.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var user = _userManager.GetUserAsync(User).GetAwaiter().GetResult();
+            DashboardElements dashboardElements = new DashboardElements();
+            if (user!=null)
+            {
+                dashboardElements = _repo.HomeRepo.GetDashboardElements(user.Id);
+                dashboardElements.Name = user.Name;
+            }
+            return View(dashboardElements);
         }
         public IActionResult AccessDenied()
         {
             return View();
         }
         
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
 
         #region APIS
 
@@ -77,10 +81,16 @@ namespace BillPayer.Areas.Bills.Controllers
             if (paymentDetails == false)
             {
                 string errorMessage = "Error Updating Payment Status";
-                return Json(new { success = false, message = errorMessage });
+                return Json(new { success = false, message = errorMessage, paid=false});
+            }
+            DashboardElements dashboardElements = GetDashboardElements();
+            if (dashboardElements == null)
+            {
+                string errorMessage = "Could not refresh dashboard data";
+                return Json(new { success = false, message = errorMessage, paid=true });
             }
             string successMessage = "Paid status updated successfully";
-            return Json(new { success = true, message = successMessage });
+            return Json(new { success = true, message = successMessage, data = dashboardElements });
         }
         [HttpGet]
         public JsonResult GetBhukkadList()
@@ -96,7 +106,20 @@ namespace BillPayer.Areas.Bills.Controllers
             }
             return Json(new { success = false });
         }
-
+        public DashboardElements GetDashboardElements()
+        {
+            var user = _userManager.GetUserAsync(User).GetAwaiter().GetResult();
+            DashboardElements dashboardElements = new DashboardElements();
+            if (user != null)
+            {
+                dashboardElements = _repo.HomeRepo.GetDashboardElements(user.Id);
+                if (dashboardElements != null)
+                {
+                    return dashboardElements;
+                }
+            }
+            return null!;
+        }
         #endregion
     }
 }

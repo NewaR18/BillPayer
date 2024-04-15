@@ -1,7 +1,5 @@
-﻿<link href="~/css/home/index.css" rel="stylesheet" />
-@{
-    var qrURL = "{\"eSewa_id\":\"9861141726\",\"name\":\"Sudip Shrestha\"}";
-}
+﻿@model DashboardElements
+<link href="~/css/home/index.css" rel="stylesheet" />
 <div class="main-wrapper">
     <div>
         <div class="content container-fluid">
@@ -9,7 +7,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="page-sub-header">
-                            <h3 class="page-title">Welcome Admin!</h3>
+                            <h3 class="page-title">Welcome @Model.Name</h3>
                         </div>
                     </div>
                 </div>
@@ -21,7 +19,7 @@
                             <div class="db-widgets d-flex justify-content-between align-items-center">
                                 <div class="db-info">
                                     <h6>Expenses</h6>
-                                    <h5>Npr 500@*@Model.Expenses*@</h5>
+                                    <h5>Rs <span id="expenseSpan">@Model.Expenses</span></h5>
                                 </div>
                                 <div class="db-icon">
                                     <img src="~/images/designs/expenses.png" width="50" height="50"/>
@@ -36,7 +34,7 @@
                             <div class="db-widgets d-flex justify-content-between align-items-center">
                                 <div class="db-info">
                                     <h6>Payment Due</h6>
-                                    <h5>Npr 300</h5>
+                                    <h5>Rs <span id="totalDueSpan">@Model.TotalDue</span></h5>
                                 </div>
                                 <div class="db-icon">
                                     <img src="~/images/designs/paymentdue.png" width="50" height="50" />
@@ -51,7 +49,7 @@
                             <div class="db-widgets d-flex justify-content-between align-items-center">
                                 <div class="db-info">
                                     <h6>Last Payment</h6>
-                                    <h5>2024-03-23</h5>
+                                    <h5><span id="paymentDateSpan">@Model.LastPaymentDate</span></h5>
                                 </div>
                                 <div class="db-icon">
                                     <img src="~/images/designs/lastpaymentdate.png" width="50" height="50" />
@@ -66,7 +64,7 @@
                             <div class="db-widgets d-flex justify-content-between align-items-center">
                                 <div class="db-info">
                                     <h6>To Receive</h6>
-                                    <h5>NPR 900.00</h5>
+                                    <h5>Rs <span id="toReceiveSpan">@Model.ToReceive</span></h5>
                                 </div>
                                 <div class="db-icon">
                                     <img src="~/images/designs/toreceive.png" width="50" height="50" />

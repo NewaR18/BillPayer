@@ -20,11 +20,11 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddHttpClient();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.Configure<MailDetailsViewModel>(builder.Configuration.GetSection("mailDetails"));
-builder.Services.AddAuthentication().AddGoogle(googleOptions =>
-{
-    googleOptions.ClientId = builder.Configuration["Authentication:Google:ClientId"];
-    googleOptions.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
-});
+//builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+//{
+//    googleOptions.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+//    googleOptions.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+//});
 builder.Services.ConfigureApplicationCookie(options => options.LoginPath = "/AccountManager/Account/LogIn");
 var app = builder.Build();
 Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NAaF1cXmhIfEx1RHxQdld5ZFRHallYTnNWUj0eQnxTdEFjW31XcHBRQGNYWUd0Xw==");
@@ -43,7 +43,7 @@ app.UseRouting();
 SeedDatabase();
 app.UseAuthentication();
 app.UseAuthorization();
-//app.UseMiddleware<AuthorizationMiddleware>();
+app.UseMiddleware<AuthorizationMiddleware>();
 app.MapControllerRoute(
     name: "default",
     pattern: "{area=Bills}/{controller=Home}/{action=Index}/{id?}");

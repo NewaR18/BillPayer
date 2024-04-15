@@ -75,6 +75,10 @@ namespace BillPayer.Areas.AccountManager.Controllers
             loginModel.ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             return View(loginModel);
         }
+        public IActionResult LockOut()
+        {
+            return View();
+        }
         public async Task<IActionResult> LoginWith2fa(bool rememberMe)
         {
             var user = await _signInManager.GetTwoFactorAuthenticationUserAsync();
@@ -137,9 +141,23 @@ namespace BillPayer.Areas.AccountManager.Controllers
                 user.Email = registerModel.Input.Email;
                 user.PhoneNumber = registerModel.Input.PhoneNumber;
                 user.Name = registerModel.Input.Name;
+                user.Address = registerModel.Input.Address;
+                user.Gender = registerModel.Input.Gender;
                 var result = await _userManager.CreateAsync(user, registerModel.Input.Password);
                 if (result.Succeeded)
                 {
+                    IEnumerable<string> RoleListEnumerable = new List<string>
+                    {
+                        "User"
+                    };
+                    var AddedToRole = await _userManager.AddToRolesAsync(user, RoleListEnumerable);
+                    if (!AddedToRole.Succeeded)
+                    {
+                        foreach (var error in AddedToRole.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, error.Description);
+                        }
+                    }
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
                         return RedirectToAction(nameof(RegisterConfirmation), new { email = registerModel.Input.Email });

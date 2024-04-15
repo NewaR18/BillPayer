@@ -77,6 +77,10 @@
       "PackagePath": "staticwebassets\\js\\Bills\\billIndex.js"
     },
     {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Bills\\product.js",
+      "PackagePath": "staticwebassets\\js\\Bills\\product.js"
+    },
+    {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\DeleteTDrow.js",
       "PackagePath": "staticwebassets\\js\\DeleteTDrow.js"
     },

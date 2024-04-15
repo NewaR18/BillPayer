@@ -13,9 +13,13 @@ namespace BillPay.Models
     {
         public int Id { get; set; }
         public int ProductId { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Qty { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Discount { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Total { get; set; }
         [Required]
         public int BhukkadsId { get; set; }

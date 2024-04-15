@@ -1,0 +1,429 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\BillPayer.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BillPayer.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Designs\\Expenses.png",
+      "PackagePath": "staticwebassets\\Images\\Designs\\Expenses.png"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Designs\\LastPaymentDate.png",
+      "PackagePath": "staticwebassets\\Images\\Designs\\LastPaymentDate.png"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Designs\\PaymentDue.png",
+      "PackagePath": "staticwebassets\\Images\\Designs\\PaymentDue.png"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Designs\\ToReceive.png",
+      "PackagePath": "staticwebassets\\Images\\Designs\\ToReceive.png"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Users\\5b6a75de-a693-48f9-a6c6-fa9833bba731.jpg",
+      "PackagePath": "staticwebassets\\Images\\Users\\5b6a75de-a693-48f9-a6c6-fa9833bba731.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\Images\\Users\\d86d61a0-2432-433e-a160-caf3314255fe.jpg",
+      "PackagePath": "staticwebassets\\Images\\Users\\d86d61a0-2432-433e-a160-caf3314255fe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\css\\BillCreate.css",
+      "PackagePath": "staticwebassets\\css\\BillCreate.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\css\\Home\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Home\\Index.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\css\\MainMenu\\default.css",
+      "PackagePath": "staticwebassets\\css\\MainMenu\\default.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\css\\toastr.min.css",
+      "PackagePath": "staticwebassets\\css\\toastr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Bills\\Create.js",
+      "PackagePath": "staticwebassets\\js\\Bills\\Create.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Bills\\ProductsEdit.js",
+      "PackagePath": "staticwebassets\\js\\Bills\\ProductsEdit.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Bills\\addProduct.js",
+      "PackagePath": "staticwebassets\\js\\Bills\\addProduct.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Bills\\addUser.js",
+      "PackagePath": "staticwebassets\\js\\Bills\\addUser.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Bills\\billDetails.js",
+      "PackagePath": "staticwebassets\\js\\Bills\\billDetails.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Bills\\billIndex.js",
+      "PackagePath": "staticwebassets\\js\\Bills\\billIndex.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Bills\\product.js",
+      "PackagePath": "staticwebassets\\js\\Bills\\product.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\DeleteTDrow.js",
+      "PackagePath": "staticwebassets\\js\\DeleteTDrow.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Home\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Home\\Index.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Home\\payDetails.js",
+      "PackagePath": "staticwebassets\\js\\Home\\payDetails.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\customer.js",
+      "PackagePath": "staticwebassets\\js\\customer.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\qr.js",
+      "PackagePath": "staticwebassets\\js\\qr.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\roleassignmentindex.js",
+      "PackagePath": "staticwebassets\\js\\roleassignmentindex.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\CSS\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\lib\\CSS\\bootstrap-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\CSS\\feather.css",
+      "PackagePath": "staticwebassets\\lib\\CSS\\feather.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\CSS\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\lib\\CSS\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\CSS\\select2.min.css",
+      "PackagePath": "staticwebassets\\lib\\CSS\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\Fontawesome\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\Fontawesome\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\Fontawesome\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\Fontawesome\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\feather.min.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\feather.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\jquery.slimscroll.min.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\jquery.slimscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\moment.min.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\platform.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\platform.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\script.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\select2.min.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\sweetalert2@11.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\sweetalert2@11.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\toastr.min.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\toastr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\qrcode.js",
+      "PackagePath": "staticwebassets\\lib\\qrcode.js"
+    },
+    {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\qrcode.min.js",
+      "PackagePath": "staticwebassets\\lib\\qrcode.min.js"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.BillPayer.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.BillPayer.props",
+      "PackagePath": "build\\BillPayer.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.BillPayer.props",
+      "PackagePath": "buildMultiTargeting\\BillPayer.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.BillPayer.props",
+      "PackagePath": "buildTransitive\\BillPayer.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

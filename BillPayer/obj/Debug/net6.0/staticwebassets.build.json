@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cp4SIzW8kf9+b/2Qi5rxNSpEZNzebclMdTWRqJeqyWk=",
+  "Hash": "CiHu4/6dZXrHeHjCv9cXru0AdD2nZRnanbuCw7Dqqf8=",
   "Source": "BillPayer",
   "BasePath": "_content/BillPayer",
   "Mode": "Default",
@@ -1358,6 +1358,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Bills\\Create.js"
+    },
+    {
+      "Identity": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Bills\\product.js",
+      "SourceId": "BillPayer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\",
+      "BasePath": "_content/BillPayer",
+      "RelativePath": "js/Bills/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Bills\\product.js"
     },
     {
       "Identity": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Bills\\ProductsEdit.js",

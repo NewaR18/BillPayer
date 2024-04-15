@@ -10,6 +10,7 @@
     <View_SelectedScaffolderCategoryPath>root/Common/MVC/View</View_SelectedScaffolderCategoryPath>
     <ActiveDebugProfile>BillPayer</ActiveDebugProfile>
     <WebStackScaffolding_ViewDialogWidth>650</WebStackScaffolding_ViewDialogWidth>
+    <NameOfLastUsedPublishProfile>C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\Properties\PublishProfiles\FolderProfile4.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

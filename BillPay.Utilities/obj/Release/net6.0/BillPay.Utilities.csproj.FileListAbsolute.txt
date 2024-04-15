@@ -1,0 +1,17 @@
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\bin\Release\net6.0\BillPay.Utilities.deps.json
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\bin\Release\net6.0\BillPay.Utilities.dll
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\bin\Release\net6.0\BillPay.Utilities.pdb
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\bin\Release\net6.0\BillPay.DataAccess.dll
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\bin\Release\net6.0\BillPay.Models.dll
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\bin\Release\net6.0\BillPay.DataAccess.pdb
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\bin\Release\net6.0\BillPay.Models.pdb
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\obj\Release\net6.0\BillPay.Utilities.csproj.AssemblyReference.cache
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\obj\Release\net6.0\BillPay.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\obj\Release\net6.0\BillPay.Utilities.AssemblyInfoInputs.cache
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\obj\Release\net6.0\BillPay.Utilities.AssemblyInfo.cs
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\obj\Release\net6.0\BillPay.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\obj\Release\net6.0\BillPay.Utilities.csproj.CopyComplete
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\obj\Release\net6.0\BillPay.Utilities.dll
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\obj\Release\net6.0\refint\BillPay.Utilities.dll
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\obj\Release\net6.0\BillPay.Utilities.pdb
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPay.Utilities\obj\Release\net6.0\ref\BillPay.Utilities.dll

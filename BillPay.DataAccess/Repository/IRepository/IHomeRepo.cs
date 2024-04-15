@@ -9,6 +9,7 @@ namespace BillPay.DataAccess.Repository.IRepository
 {
     public interface IHomeRepo
     {
+        public DashboardElements GetDashboardElements(string id);
         public IEnumerable<LineChart> GetLineTrend(string userId);
     }
 }

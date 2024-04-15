@@ -23,6 +23,42 @@ namespace BillPay.DataAccess.Repository
             _context = context;
             _configuration = configuration;
         }
+
+        public DashboardElements GetDashboardElements(string userId)
+        {
+            DashboardElements dashboardElements = new DashboardElements();
+            var conStr = _configuration.GetConnectionString("Myconnection");
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "GET_DASHBOARD_ELEMENTS";
+                using (SqlConnection conn = new SqlConnection(conStr))
+                {
+                    cmd.Connection = conn;
+                    conn.Open();
+                    cmd.CommandTimeout = 30;
+                    cmd.Parameters.Add("@USER_ID", SqlDbType.VarChar).Value = userId;
+                    using (SqlDataReader sd = cmd.ExecuteReader())
+                    {
+                        if (sd.HasRows)
+                        {
+                            while (sd.Read())
+                            {
+                                decimal expenses;
+                                decimal totalDue;
+                                decimal toReceive;
+                                dashboardElements.Expenses = decimal.TryParse(sd["EXPENSES"].ToString(), out expenses) == true ? expenses : 0;
+                                dashboardElements.TotalDue = decimal.TryParse(sd["TOTAL_DUE"].ToString(), out totalDue) == true ? totalDue : 0;
+                                dashboardElements.LastPaymentDate = DBNull.Value.Equals(sd["PAYMENT_DATE"]) ? "1999-09-09" : Convert.ToDateTime(sd["PAYMENT_DATE"]).ToString("yyyy-MM-dd");
+                                dashboardElements.ToReceive = decimal.TryParse(sd["TO_RECEIVE"].ToString(), out toReceive) == true ? toReceive : 0;
+                            }
+                        }
+                    }
+                }
+            }
+            return dashboardElements;
+        }
+
         public IEnumerable<LineChart> GetLineTrend(string userId)
         {
             List<LineChart> lineCharts = new List<LineChart>();
