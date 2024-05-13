@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Newtonsoft.Json;
 
 namespace BillPayer.Areas.Bills.Controllers
 {
@@ -28,10 +29,12 @@ namespace BillPayer.Areas.Bills.Controllers
         }
         public IActionResult Create()
         {
-            BillRequiredComponents billRequiredComponents = new BillRequiredComponents()
+            try
             {
-                BillSummary = new BillSummary(),
-                UserList = _userManager.Users.Select
+                BillRequiredComponents billRequiredComponents = new BillRequiredComponents()
+                {
+                    BillSummary = new BillSummary(),
+                    UserList = _userManager.Users.Select
                 (u =>
                     new SelectListItem
                     {
@@ -39,7 +42,7 @@ namespace BillPayer.Areas.Bills.Controllers
                         Value = u.Id.ToString(),
                     }
                 ),
-                ProductList = _repo.ProductRepo.GetAll().Select
+                    ProductList = _repo.ProductRepo.GetAll().Select
                 (u =>
                     new SelectListItem
                     {
@@ -47,242 +50,348 @@ namespace BillPayer.Areas.Bills.Controllers
                         Value = u.Id.ToString()
                     }
                 )
-            };
-            billRequiredComponents.BillSummary.Date = DateTime.Now;
-            billRequiredComponents.BillSummary.BhukkadsList.Add(new Bhukkads() { Id = 1 });
-            billRequiredComponents.BillSummary.BhukkadsList[0].Products.Add(new ProductDetails { Id = 1 });
-            return View(billRequiredComponents);
+                };
+                billRequiredComponents.BillSummary.Date = DateTime.Now;
+                billRequiredComponents.BillSummary.BhukkadsList.Add(new Bhukkads() { Id = 1 });
+                billRequiredComponents.BillSummary.BhukkadsList[0].Products.Add(new ProductDetails { Id = 1 });
+                return View(billRequiredComponents);
+            }
+            catch
+            {
+                throw;
+            }
+            
         }
         [HttpPost]
         public IActionResult Create(BillRequiredComponents billRequiredComponents)
         {
-            for(int i=0; i< billRequiredComponents.BillSummary.BhukkadsList.Count; i++)
+            try
             {
-                for(int j=0; j< billRequiredComponents.BillSummary.BhukkadsList[i].Products.Count; j++)
+                for (int i = 0; i < billRequiredComponents.BillSummary.BhukkadsList.Count; i++)
                 {
-                    billRequiredComponents.BillSummary.BhukkadsList[i].TotalOfPerson += billRequiredComponents.BillSummary.BhukkadsList[i].Products[j].Total;
+                    for (int j = 0; j < billRequiredComponents.BillSummary.BhukkadsList[i].Products.Count; j++)
+                    {
+                        billRequiredComponents.BillSummary.BhukkadsList[i].TotalOfPerson += billRequiredComponents.BillSummary.BhukkadsList[i].Products[j].Total;
+                    }
+                    billRequiredComponents.BillSummary.GrandTotal += billRequiredComponents.BillSummary.BhukkadsList[i].TotalOfPerson;
                 }
-                billRequiredComponents.BillSummary.GrandTotal += billRequiredComponents.BillSummary.BhukkadsList[i].TotalOfPerson;
+                _repo.BillSummaryRepo.Add(billRequiredComponents.BillSummary);
+                _repo.Save();
+                return RedirectToAction(nameof(Index));
             }
-            _repo.BillSummaryRepo.Add(billRequiredComponents.BillSummary);
-            _repo.Save();
-            return RedirectToAction(nameof(Index));
+            catch
+            {
+                throw;
+            }
         }
 
         public IActionResult Details(int id)
         {
-            BillSummary billSummary = _repo.BillSummaryRepo.GetFirstOrDefault(x => x.Id == id, IncludeProperties: "Bhukkads"); 
-            if (billSummary == null)
+            try
             {
-                TempData["error"] = "Bill Summary Not Found";
-                return RedirectToAction(nameof(Index));
+                BillSummary billSummary = _repo.BillSummaryRepo.GetFirstOrDefault(x => x.Id == id, IncludeProperties: "Bhukkads");
+                if (billSummary == null)
+                {
+                    TempData["error"] = "Bill Summary Not Found";
+                    return RedirectToAction(nameof(Index));
+                }
+                BillRequiredComponents billRequiredComponents = new BillRequiredComponents()
+                {
+                    BillSummary = billSummary,
+                    UserList = _userManager.Users.Select
+                    (u =>
+                        new SelectListItem
+                        {
+                            Text = u.Name,
+                            Value = u.Id.ToString(),
+                        }
+                    ),
+                    ProductList = _repo.ProductRepo.GetAll().Select
+                    (u =>
+                        new SelectListItem
+                        {
+                            Text = u.Name,
+                            Value = u.Id.ToString()
+                        }
+                    )
+                };
+                return View(billRequiredComponents);
             }
-            BillRequiredComponents billRequiredComponents = new BillRequiredComponents()
+            catch
             {
-                BillSummary = billSummary,
-                UserList = _userManager.Users.Select
-                (u =>
-                    new SelectListItem
-                    {
-                        Text = u.Name,
-                        Value = u.Id.ToString(),
-                    }
-                ),
-                ProductList = _repo.ProductRepo.GetAll().Select
-                (u =>
-                    new SelectListItem
-                    {
-                        Text = u.Name,
-                        Value = u.Id.ToString()
-                    }
-                )
-            };
-            return View(billRequiredComponents);
+                throw;
+            }
         }
         public IActionResult ProductsEdit (int id)
         {
-            ProductViewModel entity = _repo.BillSummaryRepo.GetInfoBasedOnProductDetails(id);
-            return View(entity);
+            try
+            {
+                ProductViewModel entity = _repo.BillSummaryRepo.GetInfoBasedOnProductDetails(id);
+                return View(entity);
+            }
+            catch
+            {
+                throw;
+            }
         }
         [HttpPost]
         public IActionResult ProductsEdit(ProductViewModel productViewModel)
         {
-            ProductDetails productDetails = new ProductDetails()
+            try
             {
-                Id = productViewModel.Id,
-                Qty = productViewModel.Qty,
-                Price = productViewModel.Price,
-                Discount = productViewModel.Discount,
-                Total = productViewModel.Total
-            };
+                ProductDetails productDetails = new ProductDetails()
+                {
+                    Id = productViewModel.Id,
+                    Qty = productViewModel.Qty,
+                    Price = productViewModel.Price,
+                    Discount = productViewModel.Discount,
+                    Total = productViewModel.Total
+                };
 
-            _repo.ProductDetailsRepo.Update(productDetails);
-            _repo.Save();
-            _repo.ProductDetailsRepo.UpdateTotal(productViewModel.Id);
-            return RedirectToAction(nameof(Details), new { Id = productViewModel.BillSummaryId });
+                _repo.ProductDetailsRepo.Update(productDetails);
+                _repo.Save();
+                _repo.ProductDetailsRepo.UpdateTotal(productViewModel.Id);
+                return RedirectToAction(nameof(Details), new { Id = productViewModel.BillSummaryId });
+            }
+            catch
+            {
+                throw;
+            }
         }
         public IActionResult AddProduct(int bhukkadsId)
         {
-            AddProductDetailsViewModel entity = _repo.BhukkadsRepo.GetInfoBasedOnBhukkadsId(bhukkadsId);
-            entity.ProductList = _repo.ProductRepo.GetAll().Select
-                (u =>
-                    new SelectListItem
-                    {
-                        Text = u.Name,
-                        Value = u.Id.ToString()
-                    }
-                );
-            return View(entity);
+            try
+            {
+                AddProductDetailsViewModel entity = _repo.BhukkadsRepo.GetInfoBasedOnBhukkadsId(bhukkadsId);
+                entity.ProductList = _repo.ProductRepo.GetAll().Select
+                    (u =>
+                        new SelectListItem
+                        {
+                            Text = u.Name,
+                            Value = u.Id.ToString()
+                        }
+                    );
+                return View(entity);
+            }
+            catch
+            {
+                throw;
+            }
         }
         [HttpPost]
         public IActionResult AddProduct(AddProductDetailsViewModel entity)
         {
-            ProductDetails productDetails = new ProductDetails()
+            try
             {
-                Id = 0,
-                BhukkadsId = entity.BhukkadsId,
-                ProductId = entity.ProductDetails.ProductId,
-                Qty = entity.ProductDetails.Qty,
-                Price = entity.ProductDetails.Price,
-                Discount = entity.ProductDetails.Discount,
-                Total = entity.ProductDetails.Total
-            };
-            _repo.ProductDetailsRepo.Add(productDetails);
-            _repo.Save();
-            _repo.ProductDetailsRepo.UpdateTotal(productDetails.Id);
-            TempData["success"] = "Product Added Successfully";
-            return RedirectToAction(nameof(Details), new { Id = entity.BillSummaryId });
+                ProductDetails productDetails = new ProductDetails()
+                {
+                    Id = 0,
+                    BhukkadsId = entity.BhukkadsId,
+                    ProductId = entity.ProductDetails.ProductId,
+                    Qty = entity.ProductDetails.Qty,
+                    Price = entity.ProductDetails.Price,
+                    Discount = entity.ProductDetails.Discount,
+                    Total = entity.ProductDetails.Total
+                };
+                _repo.ProductDetailsRepo.Add(productDetails);
+                _repo.Save();
+                _repo.ProductDetailsRepo.UpdateTotal(productDetails.Id);
+                TempData["success"] = "Product Added Successfully";
+                return RedirectToAction(nameof(Details), new { Id = entity.BillSummaryId });
+            }
+            catch
+            {
+                throw;
+            }
         }
         public IActionResult AddUser(int billSummaryId)
         {
-            BillSummary billSummary = _repo.BillSummaryRepo.GetFirstOrDefault(x => x.Id.Equals(billSummaryId));
-            if (billSummary == null)
+            try
             {
-                TempData["error"] = "Bill Summary not found";
-                return RedirectToAction(nameof(Details), new { Id = billSummaryId });
+                BillSummary billSummary = _repo.BillSummaryRepo.GetFirstOrDefault(x => x.Id.Equals(billSummaryId));
+                if (billSummary == null)
+                {
+                    TempData["error"] = "Bill Summary not found";
+                    return RedirectToAction(nameof(Details), new { Id = billSummaryId });
+                }
+                BillRequiredComponents billRequiredComponents = new BillRequiredComponents()
+                {
+                    BillSummary = billSummary,
+                    UserList = _userManager.Users.Select
+                    (u =>
+                        new SelectListItem
+                        {
+                            Text = u.Name,
+                            Value = u.Id.ToString(),
+                        }
+                    ),
+                    ProductList = _repo.ProductRepo.GetAll().Select
+                    (u =>
+                        new SelectListItem
+                        {
+                            Text = u.Name,
+                            Value = u.Id.ToString()
+                        }
+                    )
+                };
+                billRequiredComponents.BillSummary.BhukkadsList.Add(new Bhukkads() { Id = 1 });
+                billRequiredComponents.BillSummary.BhukkadsList[0].Products.Add(new ProductDetails { Id = 1 });
+                return View(billRequiredComponents);
             }
-            BillRequiredComponents billRequiredComponents = new BillRequiredComponents()
+            catch
             {
-                BillSummary = billSummary,
-                UserList = _userManager.Users.Select
-                (u =>
-                    new SelectListItem
-                    {
-                        Text = u.Name,
-                        Value = u.Id.ToString(),
-                    }
-                ),
-                ProductList = _repo.ProductRepo.GetAll().Select
-                (u =>
-                    new SelectListItem
-                    {
-                        Text = u.Name,
-                        Value = u.Id.ToString()
-                    }
-                )
-            };
-            billRequiredComponents.BillSummary.BhukkadsList.Add(new Bhukkads() { Id = 1 });
-            billRequiredComponents.BillSummary.BhukkadsList[0].Products.Add(new ProductDetails { Id = 1 });
-            return View(billRequiredComponents);
+                throw;
+            }
         }
         [HttpPost]
         public IActionResult AddUser(BillRequiredComponents billRequiredComponents)
         {
-            for (int i = 0; i < billRequiredComponents.BillSummary.BhukkadsList[0].Products.Count; i++)
+            try
             {
-                billRequiredComponents.BillSummary.BhukkadsList[0].TotalOfPerson += billRequiredComponents.BillSummary.BhukkadsList[0].Products[i].Total;
+                for (int i = 0; i < billRequiredComponents.BillSummary.BhukkadsList[0].Products.Count; i++)
+                {
+                    billRequiredComponents.BillSummary.BhukkadsList[0].TotalOfPerson += billRequiredComponents.BillSummary.BhukkadsList[0].Products[i].Total;
+                }
+                Bhukkads bhukkad = new Bhukkads()
+                {
+                    Id = 0,
+                    UserId = billRequiredComponents.BillSummary.BhukkadsList[0].UserId,
+                    TotalOfPerson = billRequiredComponents.BillSummary.BhukkadsList[0].TotalOfPerson,
+                    Paid = false,
+                    BillSummaryId = billRequiredComponents.BillSummary.Id,
+                    Products = billRequiredComponents.BillSummary.BhukkadsList[0].Products
+                };
+                _repo.BhukkadsRepo.Add(bhukkad);
+                _repo.Save();
+                bool isSuccess = _repo.BillSummaryRepo.UpdateGrandTotal(billRequiredComponents.BillSummary.Id);
+                if (!isSuccess)
+                {
+                    TempData["error"] = "Error Updating GrandTotal";
+                }
+                return RedirectToAction(nameof(Details), new { Id = billRequiredComponents.BillSummary.Id });
             }
-            Bhukkads bhukkad = new Bhukkads()
+            catch
             {
-                Id = 0,
-                UserId = billRequiredComponents.BillSummary.BhukkadsList[0].UserId,
-                TotalOfPerson = billRequiredComponents.BillSummary.BhukkadsList[0].TotalOfPerson,
-                Paid = false,
-                BillSummaryId = billRequiredComponents.BillSummary.Id,
-                Products = billRequiredComponents.BillSummary.BhukkadsList[0].Products
-            };
-            _repo.BhukkadsRepo.Add(bhukkad);
-            _repo.Save();
-            bool isSuccess = _repo.BillSummaryRepo.UpdateGrandTotal(billRequiredComponents.BillSummary.Id);
-            if(!isSuccess)
-            {
-                TempData["error"] = "Error Updating GrandTotal";
+                throw;
             }
-            return RedirectToAction(nameof(Details), new { Id = billRequiredComponents.BillSummary.Id });
         }
 
         #region API
         public JsonResult GetAll(int productId)
         {
-            var entities = _repo.ProductRepo.GetFirstOrDefault(x => x.Id == productId);
-            if(entities != null)
+            try
             {
-                return Json(new { success = true, data = entities });
+                var entities = _repo.ProductRepo.GetFirstOrDefault(x => x.Id == productId);
+                if (entities != null)
+                {
+                    return Json(new { success = true, data = entities });
+                }
+                else
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        data = new Product()
+                        {
+                            Id = productId
+                        }
+                    });
+                }
             }
-            else
+            catch
             {
-                return Json(new { success = false, 
-                                    data = new Product()
-                                    {
-                                        Id = productId
-                                    }
-                                 });
+                throw;
             }
         }
         public JsonResult GetBillsList()
         {
-            var entities = _repo.BillSummaryRepo.GetAll();
-            return Json(new { data = entities });
+            try
+            {
+                var entities = _repo.BillSummaryRepo.GetAll();
+                return Json(new { data = entities });
+            }
+            catch
+            {
+                throw;
+            }
         }
         [HttpDelete]
         public JsonResult DeleteBillSummary(int? id)
         {
-            BillSummary entity = _repo.BillSummaryRepo.GetFirstOrDefault(x => x.Id == id, IncludeProperties:"Bhukkads");
-            if (entity == null)
+            try
             {
-                return Json(new { success = false, message = "Error while deleting" });
+                BillSummary entity = _repo.BillSummaryRepo.GetFirstOrDefault(x => x.Id == id, IncludeProperties: "Bhukkads");
+                if (entity == null)
+                {
+                    return Json(new { success = false, message = "Error while deleting" });
+                }
+                else
+                {
+                    _repo.BillSummaryRepo.Remove(entity);
+                    _repo.Save();
+                    return Json(new { success = true, message = "Deleted Successfully" });
+                }
             }
-            else
+            catch
             {
-                _repo.BillSummaryRepo.Remove(entity);
-                _repo.Save();
-                return Json(new { success = true, message = "Deleted Successfully" });
+                throw;
             }
         }
         [HttpDelete]
         public JsonResult ProductsDelete(int? id)
         {
-            ProductDetails productDetails = _repo.ProductDetailsRepo.GetFirstOrDefault(x => x.Id == id);
-            if (productDetails == null)
+            try
             {
-                return Json(new { success = false, message = "Error while deleting" });
+                ProductDetails productDetails = _repo.ProductDetailsRepo.GetFirstOrDefault(x => x.Id == id);
+                if (productDetails == null)
+                {
+                    return Json(new { success = false, message = "Error while deleting" });
+                }
+                else
+                {
+                    _repo.ProductDetailsRepo.Remove(productDetails);
+                    _repo.Save();
+                    return Json(new { success = true, message = "Deleted Successfully" });
+                }
             }
-            else
+            catch
             {
-                _repo.ProductDetailsRepo.Remove(productDetails);
-                _repo.Save();
-                return Json(new { success = true, message = "Deleted Successfully" });
+                throw;
             }
         }
         [HttpPost]
         public JsonResult UpdatePayerId(int BillSummaryId, string PayerId)
         {
-            bool isSuccess = _repo.BillSummaryRepo.UpdatePayerId(BillSummaryId, PayerId);
-            if (isSuccess == false)
+            try
             {
-                return Json(new { success = false, message = "Error while Updating" });
+                bool isSuccess = _repo.BillSummaryRepo.UpdatePayerId(BillSummaryId, PayerId);
+                if (isSuccess == false)
+                {
+                    return Json(new { success = false, message = "Error while Updating" });
+                }
+                return Json(new { success = true, message = "Updated Successfully" });
             }
-            return Json(new { success = true, message = "Updated Successfully" });
+            catch
+            {
+                throw;
+            }
         }
         [HttpPost]
         public JsonResult UpdateDate(int BillSummaryId, DateTime DateEaten)
         {
-            bool isSuccess = _repo.BillSummaryRepo.UpdateDate(BillSummaryId, DateEaten);
-            if (isSuccess == false)
+            try
             {
-                return Json(new { success = false, message = "Error while Updating" });
+                bool isSuccess = _repo.BillSummaryRepo.UpdateDate(BillSummaryId, DateEaten);
+                if (isSuccess == false)
+                {
+                    return Json(new { success = false, message = "Error while Updating" });
+                }
+                return Json(new { success = true, message = "Updated Successfully" });
             }
-            return Json(new { success = true, message = "Updated Successfully" });
+            catch
+            {
+                throw;
+            }
         }
         #endregion
     }

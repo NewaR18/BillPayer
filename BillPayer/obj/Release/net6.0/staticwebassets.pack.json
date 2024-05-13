@@ -93,6 +93,10 @@
       "PackagePath": "staticwebassets\\js\\Home\\payDetails.js"
     },
     {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\Home\\paymentReport.js",
+      "PackagePath": "staticwebassets\\js\\Home\\paymentReport.js"
+    },
+    {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\js\\customer.js",
       "PackagePath": "staticwebassets\\js\\customer.js"
     },

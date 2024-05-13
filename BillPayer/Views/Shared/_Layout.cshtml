@@ -3,7 +3,19 @@
 @using BillPay.Utilities.RolesAndMenus;
 @using Microsoft.AspNetCore.Identity;
 @using Microsoft.AspNetCore.Http;
+@using System.Security.Claims;
 @inject SignInManager<ApplicationUser> signInManager
+@inject UserManager<ApplicationUser> userManager
+@{
+    var userClaimsIdentity = (ClaimsIdentity)User.Identity!;
+    var userIdClaim = userClaimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+    var username = "User";
+    if (userIdClaim != null)
+    {
+        username = userManager.FindByIdAsync(userIdClaim.Value).GetAwaiter().GetResult().Name;
+    }
+
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +53,7 @@
                         @if (signInManager.IsSignedIn(User))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="AccountManager" asp-controller="Account" asp-action="Profile">Hello @User.Identity?.Name!</a>
+                                <a class="nav-link text-dark" asp-area="AccountManager" asp-controller="Account" asp-action="Profile">Hello @username</a>
                             </li>
                             <li class="nav-item">
                                 <form class="form-inline" asp-area="AccountManager" asp-controller="Account" asp-action="Logout">

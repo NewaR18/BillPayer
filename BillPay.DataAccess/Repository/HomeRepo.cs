@@ -26,69 +26,84 @@ namespace BillPay.DataAccess.Repository
 
         public DashboardElements GetDashboardElements(string userId)
         {
-            DashboardElements dashboardElements = new DashboardElements();
-            var conStr = _configuration.GetConnectionString("Myconnection");
-            using (SqlCommand cmd = new SqlCommand())
+            try
             {
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "GET_DASHBOARD_ELEMENTS";
-                using (SqlConnection conn = new SqlConnection(conStr))
+                DashboardElements dashboardElements = new DashboardElements();
+                var conStr = _configuration.GetConnectionString("Myconnection");
+                using (SqlCommand cmd = new SqlCommand())
                 {
-                    cmd.Connection = conn;
-                    conn.Open();
-                    cmd.CommandTimeout = 30;
-                    cmd.Parameters.Add("@USER_ID", SqlDbType.VarChar).Value = userId;
-                    using (SqlDataReader sd = cmd.ExecuteReader())
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "GET_DASHBOARD_ELEMENTS";
+                    using (SqlConnection conn = new SqlConnection(conStr))
                     {
-                        if (sd.HasRows)
+                        cmd.Connection = conn;
+                        conn.Open();
+                        cmd.CommandTimeout = 30;
+                        cmd.Parameters.Add("@USER_ID", SqlDbType.VarChar).Value = userId;
+                        using (SqlDataReader sd = cmd.ExecuteReader())
                         {
-                            while (sd.Read())
+                            if (sd.HasRows)
                             {
-                                decimal expenses;
-                                decimal totalDue;
-                                decimal toReceive;
-                                dashboardElements.Expenses = decimal.TryParse(sd["EXPENSES"].ToString(), out expenses) == true ? expenses : 0;
-                                dashboardElements.TotalDue = decimal.TryParse(sd["TOTAL_DUE"].ToString(), out totalDue) == true ? totalDue : 0;
-                                dashboardElements.LastPaymentDate = DBNull.Value.Equals(sd["PAYMENT_DATE"]) ? "1999-09-09" : Convert.ToDateTime(sd["PAYMENT_DATE"]).ToString("yyyy-MM-dd");
-                                dashboardElements.ToReceive = decimal.TryParse(sd["TO_RECEIVE"].ToString(), out toReceive) == true ? toReceive : 0;
+                                while (sd.Read())
+                                {
+                                    decimal expenses;
+                                    decimal totalDue;
+                                    decimal toReceive;
+                                    dashboardElements.Expenses = decimal.TryParse(sd["EXPENSES"].ToString(), out expenses) == true ? expenses : 0;
+                                    dashboardElements.TotalDue = decimal.TryParse(sd["TOTAL_DUE"].ToString(), out totalDue) == true ? totalDue : 0;
+                                    dashboardElements.LastPaymentDate = DBNull.Value.Equals(sd["PAYMENT_DATE"]) ? "1999-09-09" : Convert.ToDateTime(sd["PAYMENT_DATE"]).ToString("yyyy-MM-dd");
+                                    dashboardElements.ToReceive = decimal.TryParse(sd["TO_RECEIVE"].ToString(), out toReceive) == true ? toReceive : 0;
+                                }
                             }
                         }
                     }
                 }
+                return dashboardElements;
             }
-            return dashboardElements;
+            catch
+            {
+                throw;
+            }
         }
 
         public IEnumerable<LineChart> GetLineTrend(string userId)
         {
-            List<LineChart> lineCharts = new List<LineChart>();
-            var conStr = _configuration.GetConnectionString("Myconnection");
-            using (SqlCommand cmd = new SqlCommand())
+            try
             {
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "USP_USER_EXPENSE_CHART";
-                using (SqlConnection conn = new SqlConnection(conStr))
+                int x = Convert.ToInt32(userId);
+                List<LineChart> lineCharts = new List<LineChart>();
+                var conStr = _configuration.GetConnectionString("Myconnection");
+                using (SqlCommand cmd = new SqlCommand())
                 {
-                    cmd.Connection = conn;
-                    conn.Open();
-                    cmd.CommandTimeout = 30;
-                    cmd.Parameters.Add("@USER_ID", SqlDbType.VarChar).Value = userId;
-                    using (SqlDataReader sd = cmd.ExecuteReader())
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "USP_USER_EXPENSE_CHART";
+                    using (SqlConnection conn = new SqlConnection(conStr))
                     {
-                        if (sd.HasRows)
+                        cmd.Connection = conn;
+                        conn.Open();
+                        cmd.CommandTimeout = 30;
+                        cmd.Parameters.Add("@USER_ID", SqlDbType.VarChar).Value = userId;
+                        using (SqlDataReader sd = cmd.ExecuteReader())
                         {
-                            while (sd.Read())
+                            if (sd.HasRows)
                             {
-                                LineChart lineChart = new LineChart();
-                                lineChart.Date = sd["DATE"] == null ? "" : sd["DATE"].ToString()!;
-                                lineChart.Amount = sd["AMT"] == null ? "" : sd["AMT"].ToString()!;
-                                lineCharts.Add(lineChart);
+                                while (sd.Read())
+                                {
+                                    LineChart lineChart = new LineChart();
+                                    lineChart.Date = sd["DATE"] == null ? "" : sd["DATE"].ToString()!;
+                                    lineChart.Amount = sd["AMT"] == null ? "" : sd["AMT"].ToString()!;
+                                    lineCharts.Add(lineChart);
+                                }
                             }
                         }
                     }
                 }
+                return lineCharts;
             }
-            return lineCharts;
+            catch
+            {
+                throw;
+            }
         }
     }
 }

@@ -212,8 +212,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmlsbHNcVmlld3NcSG9tZVxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sudip.shrestha/source/repos/BillPayer/BillPayer/Areas/Bills/Views/Home/ExceptionScreen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmlsbHNcVmlld3NcSG9tZVxFeGNlcHRpb25TY3JlZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sudip.shrestha/source/repos/BillPayer/BillPayer/Areas/Bills/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmlsbHNcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sudip.shrestha/source/repos/BillPayer/BillPayer/Areas/Bills/Views/Home/PaymentReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmlsbHNcVmlld3NcSG9tZVxQYXltZW50UmVwb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sudip.shrestha/source/repos/BillPayer/BillPayer/Areas/Bills/Views/Home/Privacy.cshtml]

@@ -47,6 +47,12 @@
                         <a asp-area="Bills" asp-controller="Product" asp-action="Index"><i class="fa fa-tachometer" aria-hidden="true"></i> <span>Products</span></a>
                     </li>
                 }
+                @if (Model.Any(x => x.Equals("Home")))
+                {
+                    <li>
+                        <a asp-area="Bills" asp-controller="Home" asp-action="PaymentReport"><i class="fa fa-tachometer" aria-hidden="true"></i> <span>Report</span></a>
+                    </li>
+                }
             </ul>
         </div>
     </div>

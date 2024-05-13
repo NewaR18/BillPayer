@@ -1,5 +1,6 @@
 ﻿using BillPay.Models;
 using BillPay.Models.ViewModels.Bills;
+using BillPay.Models.ViewModels.Home;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,5 +18,6 @@ namespace BillPay.DataAccess.Repository.IRepository
         public bool UpdateDate(int BillSummaryId, DateTime DateEaten);
         public bool UpdateGrandTotal(int BillSummaryId);
         public ProductViewModel GetInfoBasedOnProductDetails(int id);
+        public ReportDetails GetPaymentFormByBillSummaryId(int billSummaryId, bool paid);
     }
 }

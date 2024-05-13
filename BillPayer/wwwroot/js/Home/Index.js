@@ -3,7 +3,19 @@ var productDataTable;
 $(document).ready(function () {
     LoadDataTable();
     OnClickPay();
+    OnClickDashboardElements();
 })
+function OnClickDashboardElements() {
+    $(document).on('click', '.divExpenses', function () {
+        window.location.href = "/Bills/Home/PaymentReport?status=expenses";
+    });
+    $(document).on('click', '.divToReceive', function () {
+        window.location.href = "/Bills/Home/PaymentReport?status=toReceive";
+    });
+    $(document).on('click', '.divPaymentDue', function () {
+        window.location.href = "/Bills/Home/PaymentReport?status=toPay";
+    });
+}
 function OnClickPay() {
     $(document).on('click', '.payDetails', function () {
         debugger;

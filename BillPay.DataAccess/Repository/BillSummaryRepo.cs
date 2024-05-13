@@ -2,6 +2,7 @@
 using BillPay.DataAccess.Repository.IRepository;
 using BillPay.Models;
 using BillPay.Models.ViewModels.Bills;
+using BillPay.Models.ViewModels.Home;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -93,6 +94,37 @@ namespace BillPay.DataAccess.Repository
             query.GrandTotal = total;
             _context.SaveChanges();
             return true;
+        }
+
+        public ReportDetails GetPaymentFormByBillSummaryId(int billSummaryId, bool paid)
+        {
+            var reportDetails = (from bs in _context.BillSummary
+                                 join bk in _context.Bhukkads on bs.Id equals bk.BillSummaryId
+                                 join payerUser in _context.ApplicationUser on bs.PayerUserId equals payerUser.Id
+                                 join bhukkadUser in _context.ApplicationUser on bk.UserId equals bhukkadUser.Id
+                                 where bk.Paid == paid && bs.Id == billSummaryId
+                                 select new
+                                 {
+                                     Payer = payerUser.Name,
+                                     Date = bs.Date.Date,
+                                     Bhukkad = bhukkadUser.Name,
+                                     TotalOfPerson = bk.TotalOfPerson
+                                 }).ToList();
+
+            var result = reportDetails.GroupBy(
+                rd => new { rd.Payer, rd.Date },
+                (key, group) => new ReportDetails
+                {
+                    Payer = key.Payer,
+                    Date = key.Date,
+                    GrandTotal = group.Sum(x => x.TotalOfPerson).ToString(),
+                    BhukkadsTotal = group.Select(x => new BhukkadTotal
+                    {
+                        Bhukkad = x.Bhukkad,
+                        Total = x.TotalOfPerson
+                    }).ToList()
+                }).FirstOrDefault();
+            return result;
         }
     }
 }

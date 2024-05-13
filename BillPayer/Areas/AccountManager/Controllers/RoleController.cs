@@ -27,174 +27,238 @@ namespace BillPayer.Areas.AccountManager.Controllers
         }
         public IActionResult Index()
         {
-            IEnumerable<ApplicationRole> data=_roleManager.Roles;
-            return View(data);
+            try
+            {
+                IEnumerable<ApplicationRole> data = _roleManager.Roles;
+                return View(data);
+            }
+            catch
+            {
+
+                throw;
+            }
         }
         public IActionResult Create()
         {
-            RoleModel roleModel = new RoleModel()
+            try
             {
-                AvailableMenus = _unitOfWork.MenuRepo.GetAll().Select(x => new Menu()
+                RoleModel roleModel = new RoleModel()
                 {
-                    MenuId = x.MenuId,
-                    Name = x.Name
-                }).ToList(),
-            };
-            return View(roleModel);
+                    AvailableMenus = _unitOfWork.MenuRepo.GetAll().Select(x => new Menu()
+                    {
+                        MenuId = x.MenuId,
+                        Name = x.Name
+                    }).ToList(),
+                };
+                return View(roleModel);
+            }
+            catch
+            {
+
+                throw;
+            }
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(RoleModel entity)
         {
-            if(ModelState.IsValid)
+            try
             {
-                ApplicationRole role=new ApplicationRole();
-                role.Name = entity.Name;
-                if (entity.SelectedMenuIds.Any())
+                if (ModelState.IsValid)
                 {
-                    role.ListOfMenuId = string.Join(',',entity.SelectedMenuIds);
-                }
-                var result=await _roleManager.CreateAsync(role);
-                if(result.Succeeded)
-                {
-                    TempData["success"] = "New Role Created";
-                    return RedirectToAction(nameof(Index));
-                }
-                else
-                {
-                    foreach (var error in result.Errors)
+                    ApplicationRole role = new ApplicationRole();
+                    role.Name = entity.Name;
+                    if (entity.SelectedMenuIds.Any())
                     {
-                        ModelState.AddModelError(string.Empty, error.Description);
+                        role.ListOfMenuId = string.Join(',', entity.SelectedMenuIds);
+                    }
+                    var result = await _roleManager.CreateAsync(role);
+                    if (result.Succeeded)
+                    {
+                        TempData["success"] = "New Role Created";
+                        return RedirectToAction(nameof(Index));
+                    }
+                    else
+                    {
+                        foreach (var error in result.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, error.Description);
+                        }
                     }
                 }
+                return View();
             }
-            return View();
+            catch
+            {
+
+                throw;
+            }
         }
         public async Task<IActionResult> Details(string id)
         {
-            ApplicationRole role= await _roleManager.FindByIdAsync(id);
-            IEnumerable<string> result = role.ListOfMenuId.Split(',').Select(item => item.Trim());
-            RoleModel roleModel = new RoleModel()
+            try
             {
-                Name = role.Name,
-                SelectedMenuIds = result.ToList(),
-                AvailableMenus = _unitOfWork.MenuRepo.GetAll().Select(x => new Menu()
+                ApplicationRole role = await _roleManager.FindByIdAsync(id);
+                IEnumerable<string> result = role.ListOfMenuId.Split(',').Select(item => item.Trim());
+                RoleModel roleModel = new RoleModel()
                 {
-                    MenuId = x.MenuId,
-                    Name = x.Name
-                }).ToList(),
-            };
-            return View(roleModel);
+                    Name = role.Name,
+                    SelectedMenuIds = result.ToList(),
+                    AvailableMenus = _unitOfWork.MenuRepo.GetAll().Select(x => new Menu()
+                    {
+                        MenuId = x.MenuId,
+                        Name = x.Name
+                    }).ToList(),
+                };
+                return View(roleModel);
+            }
+            catch
+            {
+
+                throw;
+            }
         }
         public async Task<IActionResult> Edit(string id)
         {
-            ApplicationRole role = await _roleManager.FindByIdAsync(id);
-            IEnumerable<string> result = new List<string>();
-            if (!string.IsNullOrEmpty(role.ListOfMenuId))
+            try
             {
-                result = role.ListOfMenuId.Split(',').Select(item => item.Trim());
-            }
-            
-            RoleModel roleModel = new RoleModel()
-            {
-                Name = role.Name,
-                Role = role,
-                SelectedMenuIds = result.ToList(),
-                AvailableMenus = _unitOfWork.MenuRepo.GetAll().Select(x => new Menu()
+                ApplicationRole role = await _roleManager.FindByIdAsync(id);
+                IEnumerable<string> result = new List<string>();
+                if (!string.IsNullOrEmpty(role.ListOfMenuId))
                 {
-                    MenuId = x.MenuId,
-                    Name = x.Name
-                }).ToList(),
-            };
-            return View(roleModel);
+                    result = role.ListOfMenuId.Split(',').Select(item => item.Trim());
+                }
+
+                RoleModel roleModel = new RoleModel()
+                {
+                    Name = role.Name,
+                    Role = role,
+                    SelectedMenuIds = result.ToList(),
+                    AvailableMenus = _unitOfWork.MenuRepo.GetAll().Select(x => new Menu()
+                    {
+                        MenuId = x.MenuId,
+                        Name = x.Name
+                    }).ToList(),
+                };
+                return View(roleModel);
+            }
+            catch
+            {
+
+                throw;
+            }
         }
         [HttpPost]
         public async Task<IActionResult> Edit(RoleModel roleModel)
         {
-            if (ModelState.IsValid)
+            try
             {
-                ApplicationRole role = await _roleManager.FindByIdAsync(roleModel.Role.Id);
-                role.Name = roleModel.Name;
-                role.ListOfMenuId = "";
-                if (roleModel.SelectedMenuIds!=null)
+                if (ModelState.IsValid)
                 {
-                    role.ListOfMenuId = string.Join(',', roleModel.SelectedMenuIds);
-                }
-                var result = await _roleManager.UpdateAsync(role);
-                if (result.Succeeded)
-                {
-                    TempData["success"] = "Role Updated";
-                    return RedirectToAction(nameof(Index));
-                }
-                else
-                {
-                    foreach (var error in result.Errors)
+                    ApplicationRole role = await _roleManager.FindByIdAsync(roleModel.Role.Id);
+                    role.Name = roleModel.Name;
+                    role.ListOfMenuId = "";
+                    if (roleModel.SelectedMenuIds != null)
                     {
-                        ModelState.AddModelError(string.Empty, error.Description);
+                        role.ListOfMenuId = string.Join(',', roleModel.SelectedMenuIds);
+                    }
+                    var result = await _roleManager.UpdateAsync(role);
+                    if (result.Succeeded)
+                    {
+                        TempData["success"] = "Role Updated";
+                        return RedirectToAction(nameof(Index));
+                    }
+                    else
+                    {
+                        foreach (var error in result.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, error.Description);
+                        }
                     }
                 }
+                return View(roleModel);
             }
-            return View(roleModel);
+            catch
+            {
+
+                throw;
+            }
         }
         public IActionResult RoleAssignment()
         {
-            RoleAssignmentViewModel roleAssignmentViewModel = new RoleAssignmentViewModel()
+            try
             {
-                UserList = _userManager.Users.Select(x => new SelectListItem
+                RoleAssignmentViewModel roleAssignmentViewModel = new RoleAssignmentViewModel()
                 {
-                    Text = x.Name + '(' + x.Email + ')',
-                    Value = x.Id
-                }),
-                RoleList = _roleManager.Roles.Select(x => new SelectListItem
-                {
-                    Text= x.Name,
-                    Value = x.Id
-                })
+                    UserList = _userManager.Users.Select(x => new SelectListItem
+                    {
+                        Text = x.Name + '(' + x.Email + ')',
+                        Value = x.Id
+                    }),
+                    RoleList = _roleManager.Roles.Select(x => new SelectListItem
+                    {
+                        Text = x.Name,
+                        Value = x.Id
+                    })
 
-            };
-            return View(roleAssignmentViewModel);
+                };
+                return View(roleAssignmentViewModel);
+            }
+            catch
+            {
+
+                throw;
+            }
         }
         [HttpPost]
         public async Task<IActionResult> RoleAssignment(RoleAssignmentViewModel roleAssignmentViewModel)
         {
-            if(ModelState.IsValid)
+            try
             {
-                var user = await _userManager.FindByIdAsync(roleAssignmentViewModel.ApplicationUserId);
-                List<string> Roles = new List<string>();
-                foreach (var item in roleAssignmentViewModel.IdentityRoleId)
+                if (ModelState.IsValid)
                 {
-                    ApplicationRole Role = await _roleManager.FindByIdAsync(item);
-                    if (Role != null)
+                    var user = await _userManager.FindByIdAsync(roleAssignmentViewModel.ApplicationUserId);
+                    List<string> Roles = new List<string>();
+                    foreach (var item in roleAssignmentViewModel.IdentityRoleId)
                     {
-                        Roles.Add(Role.Name);
+                        ApplicationRole Role = await _roleManager.FindByIdAsync(item);
+                        if (Role != null)
+                        {
+                            Roles.Add(Role.Name);
+                        }
+                    }
+                    IEnumerable<string> RoleListEnumerable = Roles;
+                    var result = await _userManager.AddToRolesAsync(user, RoleListEnumerable);
+                    if (result.Succeeded)
+                    {
+                        TempData["success"] = $"Roles Assigned to {user.Name}";
+                        return RedirectToAction(nameof(RoleAssignmentIndex));
+                    }
+                    else
+                    {
+                        foreach (var error in result.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, error.Description);
+                        }
                     }
                 }
-                IEnumerable<string> RoleListEnumerable= Roles;
-                var result = await _userManager.AddToRolesAsync(user, RoleListEnumerable);
-                if(result.Succeeded)
+                roleAssignmentViewModel.UserList = _userManager.Users.Select(x => new SelectListItem
                 {
-                    TempData["success"] = $"Roles Assigned to {user.Name}";
-                    return RedirectToAction(nameof(RoleAssignmentIndex));
-                }
-                else
+                    Text = x.Name + '(' + x.Email + ')',
+                    Value = x.Id
+                });
+                roleAssignmentViewModel.RoleList = _roleManager.Roles.Select(x => new SelectListItem
                 {
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError(string.Empty, error.Description);
-                    }
-                }
+                    Text = x.Name,
+                    Value = x.Id
+                });
+                return View(roleAssignmentViewModel);
             }
-            roleAssignmentViewModel.UserList = _userManager.Users.Select(x => new SelectListItem
+            catch
             {
-                Text = x.Name + '(' + x.Email + ')',
-                Value = x.Id
-            });
-            roleAssignmentViewModel.RoleList = _roleManager.Roles.Select(x => new SelectListItem
-            {
-                Text = x.Name,
-                Value = x.Id
-            });
-            return View(roleAssignmentViewModel);
+
+                throw;
+            }
         }
         public IActionResult RoleAssignmentIndex()
         {
@@ -203,46 +267,62 @@ namespace BillPayer.Areas.AccountManager.Controllers
         [HttpGet]
         public async Task<IActionResult> RoleAssignmentDetails(string userId)
         {
-            var user = await _userManager.FindByIdAsync(userId);
-            UserRole userRole = new UserRole();
-            IEnumerable<string> roles = await _userManager.GetRolesAsync(user);
-            string rolesAsString = string.Join(", ", roles);
-            userRole.UserId = user.Id;
-            userRole.UserName = user.Name;
-            userRole.Email = user.Email;
-            userRole.RoleName = rolesAsString;
-            return View(userRole);
+            try
+            {
+                var user = await _userManager.FindByIdAsync(userId);
+                UserRole userRole = new UserRole();
+                IEnumerable<string> roles = await _userManager.GetRolesAsync(user);
+                string rolesAsString = string.Join(", ", roles);
+                userRole.UserId = user.Id;
+                userRole.UserName = user.Name;
+                userRole.Email = user.Email;
+                userRole.RoleName = rolesAsString;
+                return View(userRole);
+            }
+            catch
+            {
+
+                throw;
+            }
         }
         [HttpGet]
         public async Task<IActionResult> RoleAssignmentUpdate(string userId)
         {
-            var user = await _userManager.FindByIdAsync(userId);
-            IEnumerable<string> identityRolesList = await _userManager.GetRolesAsync(user);
-            List<string> identityRolesIdList = new List<string>();
-            foreach (var role in identityRolesList)
+            try
             {
-                ApplicationRole identityrole = await _roleManager.FindByNameAsync(role);
-                var RoleId = await _roleManager.GetRoleIdAsync(identityrole);
-                identityRolesIdList.Add(RoleId);
-            }
-            string[] identityRolesArray = identityRolesIdList.ToArray();
-            RoleAssignmentViewModel roleAssignmentViewModel = new RoleAssignmentViewModel()
-            {
-                ApplicationUserId = userId,
-                IdentityRoleId = identityRolesArray,
-                UserList = _userManager.Users.Select(x => new SelectListItem
+                var user = await _userManager.FindByIdAsync(userId);
+                IEnumerable<string> identityRolesList = await _userManager.GetRolesAsync(user);
+                List<string> identityRolesIdList = new List<string>();
+                foreach (var role in identityRolesList)
                 {
-                    Text = x.Name + '('+ x.Email +')',
-                    Value = x.Id
-                }),
-                RoleList = _roleManager.Roles.Select(x => new SelectListItem
+                    ApplicationRole identityrole = await _roleManager.FindByNameAsync(role);
+                    var RoleId = await _roleManager.GetRoleIdAsync(identityrole);
+                    identityRolesIdList.Add(RoleId);
+                }
+                string[] identityRolesArray = identityRolesIdList.ToArray();
+                RoleAssignmentViewModel roleAssignmentViewModel = new RoleAssignmentViewModel()
                 {
-                    Text = x.Name,
-                    Value = x.Id
-                })
+                    ApplicationUserId = userId,
+                    IdentityRoleId = identityRolesArray,
+                    UserList = _userManager.Users.Select(x => new SelectListItem
+                    {
+                        Text = x.Name + '(' + x.Email + ')',
+                        Value = x.Id
+                    }),
+                    RoleList = _roleManager.Roles.Select(x => new SelectListItem
+                    {
+                        Text = x.Name,
+                        Value = x.Id
+                    })
 
-            };
-            return View(roleAssignmentViewModel);
+                };
+                return View(roleAssignmentViewModel);
+            }
+            catch
+            {
+
+                throw;
+            }
         }
         [HttpPost]
         public async Task<IActionResult> RoleAssignmentUpdate(RoleAssignmentViewModel roleAssignmentViewModel)
@@ -333,62 +413,86 @@ namespace BillPayer.Areas.AccountManager.Controllers
         #region API
         public async Task<IActionResult> RoleAssignmentDelete(string id)
         {
-            var user = await _userManager.FindByIdAsync(id);
-            IEnumerable<string> identityRolesList = await _userManager.GetRolesAsync(user);
-            if (identityRolesList.Any())
+            try
             {
-                var resultDeletion = await _userManager.RemoveFromRolesAsync(user, identityRolesList);
-                if (resultDeletion.Succeeded)
+                var user = await _userManager.FindByIdAsync(id);
+                IEnumerable<string> identityRolesList = await _userManager.GetRolesAsync(user);
+                if (identityRolesList.Any())
                 {
-                    return Json(new { success = true, message = "Deleted Successfully" });
+                    var resultDeletion = await _userManager.RemoveFromRolesAsync(user, identityRolesList);
+                    if (resultDeletion.Succeeded)
+                    {
+                        return Json(new { success = true, message = "Deleted Successfully" });
+                    }
+                    else
+                    {
+                        return Json(new { success = false, message = "Error while deleting" });
+                    }
                 }
                 else
                 {
-                    return Json(new { success = false, message = "Error while deleting" });
+                    return Json(new { success = false, message = "No Roles To Delete. If you want to Delete Customer, Go to Customers Section" });
                 }
             }
-            else
+            catch
             {
-                return Json(new { success = false, message = "No Roles To Delete. If you want to Delete Customer, Go to Customers Section" });
+
+                throw;
             }
         }
         public async Task<IActionResult> Delete(string id)
         {
-            ApplicationRole role = await _roleManager.FindByIdAsync(id);
-            if (role == null)
+            try
             {
-                return Json(new { success = false, message = "Error while deleting" });
-            }
-            else
-            {
-                var result= await _roleManager.DeleteAsync(role);
-                if (result.Succeeded)
-                {
-                    return Json(new { success = true, message = "Deleted Successfully" });
-                }
-                else
+                ApplicationRole role = await _roleManager.FindByIdAsync(id);
+                if (role == null)
                 {
                     return Json(new { success = false, message = "Error while deleting" });
                 }
+                else
+                {
+                    var result = await _roleManager.DeleteAsync(role);
+                    if (result.Succeeded)
+                    {
+                        return Json(new { success = true, message = "Deleted Successfully" });
+                    }
+                    else
+                    {
+                        return Json(new { success = false, message = "Error while deleting" });
+                    }
+                }
+            }
+            catch
+            {
+
+                throw;
             }
         }
         [HttpGet]
         public async Task<IActionResult> GetUserRoles()
         {
-            var users = await _userManager.Users.ToListAsync();
-            List<UserRole> userRoles = new List<UserRole>();
-            foreach (var user in users)
+            try
             {
-                UserRole userRole = new UserRole();
-                IEnumerable<string> roles = await _userManager.GetRolesAsync(user);
-                string rolesAsString = string.Join(", ", roles);
-                userRole.UserId=user.Id;
-                userRole.UserName = user.Name;
-                userRole.Email = user.Email;
-                userRole.RoleName = rolesAsString;
-                userRoles.Add(userRole);
+                var users = await _userManager.Users.ToListAsync();
+                List<UserRole> userRoles = new List<UserRole>();
+                foreach (var user in users)
+                {
+                    UserRole userRole = new UserRole();
+                    IEnumerable<string> roles = await _userManager.GetRolesAsync(user);
+                    string rolesAsString = string.Join(", ", roles);
+                    userRole.UserId = user.Id;
+                    userRole.UserName = user.Name;
+                    userRole.Email = user.Email;
+                    userRole.RoleName = rolesAsString;
+                    userRoles.Add(userRole);
+                }
+                return Json(new { data = userRoles });
             }
-            return Json(new { data = userRoles });
+            catch
+            {
+
+                throw;
+            }
         }
         #endregion
     }

@@ -28,54 +28,96 @@ namespace BillPayer.Areas.Bills.Controllers
         public IActionResult Create(Product entity)
         {
 
-            if (ModelState.IsValid)
+            try
             {
-                _repo.ProductRepo.Add(entity);
-                _repo.Save();
-                TempData["success"] = "Product Created Successfully";
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    _repo.ProductRepo.Add(entity);
+                    _repo.Save();
+                    TempData["success"] = "Product Created Successfully";
+                    return RedirectToAction(nameof(Index));
+                }
+                TempData["error"] = "Product could not be created !! Validation error";
+                return View();
             }
-            TempData["error"] = "Product could not be created !! Validation error";
-            return View();
+            catch
+            {
+                throw;
+            }
         }
         [HttpGet]
         public IActionResult Details(int id)
         {
-            Product entity = _repo.ProductRepo.GetFirstOrDefault(x => x.Id == id);
-            return View(entity);
+            try
+            {
+                Product entity = _repo.ProductRepo.GetFirstOrDefault(x => x.Id == id);
+                return View(entity);
+            }
+            catch
+            {
+                throw;
+            }
         }
         public IActionResult Edit(int id)
         {
-            Product entity = _repo.ProductRepo.GetFirstOrDefault(x => x.Id == id);
-            return View(entity);
+            try
+            {
+                Product entity = _repo.ProductRepo.GetFirstOrDefault(x => x.Id == id);
+                return View(entity);
+            }
+            catch
+            {
+                throw;
+            }
         }
         [HttpPost]
         public IActionResult Edit(Product entity)
         {
-            _repo.ProductRepo.Update(entity);
-            _repo.Save();
-            TempData["success"] = "Company Updated Successfully";
-            return RedirectToAction(nameof(Index));
+            try
+            {
+                _repo.ProductRepo.Update(entity);
+                _repo.Save();
+                TempData["success"] = "Company Updated Successfully";
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                throw;
+            }
         }
         #region API
         [HttpGet]
         public JsonResult GetAll()
         {
-            IEnumerable<Product> entities = _repo.ProductRepo.GetAll();
-            return Json(new { data = entities });
+            try
+            {
+                IEnumerable<Product> entities = _repo.ProductRepo.GetAll();
+                return Json(new { data = entities });
+            }
+            catch
+            {
+                throw;
+            }
         }
         public IActionResult Delete(int id)
         {
-            Product product = _repo.ProductRepo.GetFirstOrDefault(x => x.Id == id);
-            if (product == null)
+            try
             {
-                return Json(new { success = false, message = "Error while deleting" });
+                Product product = _repo.ProductRepo.GetFirstOrDefault(x => x.Id == id);
+                if (product == null)
+                {
+                    return Json(new { success = false, message = "Error while deleting" });
+                }
+                else
+                {
+                    _repo.ProductRepo.Remove(product);
+                    _repo.Save();
+                    return Json(new { success = true, message = "Deleted Successfully" });
+                }
             }
-            else
+            catch
             {
-                _repo.ProductRepo.Remove(product);
-                _repo.Save();
-                return Json(new { success = true, message = "Deleted Successfully" });
+                throw;
             }
         }
         #endregion
