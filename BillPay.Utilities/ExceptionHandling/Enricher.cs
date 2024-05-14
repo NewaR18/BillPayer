@@ -10,26 +10,19 @@ using System.Threading.Tasks;
 
 namespace BillPay.Utilities.ExceptionHandling
 {
-	public class Enricher
+	public static class Enricher
 	{
-		private IDiagnosticContext _diagnosticContext;
-		private HttpContext _httpContext;
-		public Enricher(IDiagnosticContext diagnosticContext, HttpContext httpContext)
-		{
-			_diagnosticContext = diagnosticContext;
-			_httpContext = httpContext;
-		}
-		public void HttpRequestEnricher()
+		public static void HttpRequestEnricher(IDiagnosticContext diagnosticContext, HttpContext httpContext)
 		{
 			var httpContextInfo = new HttpContextInfo
 			{
-				Protocol = _httpContext.Request.Protocol,
-				Scheme = _httpContext.Request.Scheme,
-				IpAddress = _httpContext.Connection.RemoteIpAddress.ToString(),
-				Host = _httpContext.Request.Host.ToString(),
-				User = GetUserInfo(_httpContext.User)
+				Protocol = httpContext.Request.Protocol,
+				Scheme = httpContext.Request.Scheme,
+				IpAddress = httpContext.Connection.RemoteIpAddress.ToString(),
+				Host = httpContext.Request.Host.ToString(),
+				User = GetUserInfo(httpContext.User)
 			};
-			_diagnosticContext.Set("HttpContext", httpContextInfo, true);
+            diagnosticContext.Set("HttpContext", httpContextInfo, true);
 		}
 
 		private static string GetUserInfo(ClaimsPrincipal user)

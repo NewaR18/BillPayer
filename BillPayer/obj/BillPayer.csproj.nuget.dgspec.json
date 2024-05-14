@@ -338,6 +338,10 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "Serilog.Settings.Configuration": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -353,6 +357,10 @@
             "Serilog.Sinks.MSSqlServer": {
               "target": "Package",
               "version": "[6.6.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             },
             "Serilog.UI": {
               "target": "Package",

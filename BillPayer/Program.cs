@@ -30,8 +30,11 @@ builder.Services.AddHangfire(configuration => configuration
         .UseSqlServerStorage(builder.Configuration.GetConnectionString("HangfireConnection")));
 Log.Logger = new LoggerConfiguration()
         .Enrich.FromLogContext()
-		.ReadFrom.Configuration(builder.Configuration)
+        .Enrich.WithEnvironmentName()
+        .Enrich.WithMachineName()
+        .ReadFrom.Configuration(builder.Configuration)
         .CreateLogger();
+builder.Host.UseSerilog(Log.Logger); //Adding this removed the excpetion caused by app.UseSerilogRequestLogging();
 builder.Services.AddSerilogUi(options => options.UseSqlServer(conStr, "_ExceptionLogs"));
 builder.Services.AddHangfireServer();
 builder.Services.AddHttpContextAccessor();
@@ -62,7 +65,12 @@ app.UseRouting();
 SeedDatabase();
 app.UseAuthentication();
 app.UseAuthorization();
-//app.UseSerilogRequestLogging();
+app.UseSerilogRequestLogging(
+    option=>
+    {
+        option.EnrichDiagnosticContext = Enricher.HttpRequestEnricher;
+    }
+    );
 app.UseSerilogUi();
 app.UseHangfireDashboard();
 app.MapHangfireDashboard();

@@ -55,7 +55,6 @@ namespace BillPay.Utilities.Middleware
 			string errorMessage = ex.Message + " " + ex.InnerException?.ToString();
 			string controllerName = context.GetRouteValue("controller")?.ToString()!;
 			string actionName = context.GetRouteValue("action")?.ToString()!;
-			
 			using (LogContext.PushProperty("Username", context.User.Identity!.IsAuthenticated ? context.User.Identity.Name : "Anonymous"))
 			using (LogContext.PushProperty("ControllerName", controllerName))
 			using (LogContext.PushProperty("ActionName", actionName))

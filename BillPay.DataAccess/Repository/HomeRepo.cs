@@ -17,6 +17,7 @@ namespace BillPay.DataAccess.Repository
     public class HomeRepo : IHomeRepo
     {
         private readonly AppDbContext _context;
+
         private readonly IConfiguration _configuration;
         public HomeRepo(AppDbContext context, IConfiguration configuration)
         {
@@ -70,7 +71,6 @@ namespace BillPay.DataAccess.Repository
         {
             try
             {
-                int x = Convert.ToInt32(userId);
                 List<LineChart> lineCharts = new List<LineChart>();
                 var conStr = _configuration.GetConnectionString("Myconnection");
                 using (SqlCommand cmd = new SqlCommand())

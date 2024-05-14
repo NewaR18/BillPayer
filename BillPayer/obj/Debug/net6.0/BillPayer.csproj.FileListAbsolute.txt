@@ -334,3 +334,6 @@ C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\Scruto
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\Serilog.Ui.Core.dll
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\Serilog.Ui.Web.dll
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\Serilog.Ui.MsSqlServerProvider.dll
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\Serilog.Sinks.Seq.dll
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\System.Threading.Channels.dll
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\Serilog.Enrichers.Environment.dll
