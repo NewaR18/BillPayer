@@ -3508,6 +3508,7 @@
           "MailKit": "4.3.0",
           "Microsoft.AspNetCore.Identity.UI": "6.0.27",
           "MimeKit": "4.3.0",
+          "Scrutor": "4.2.2",
           "Serilog.Extensions.Hosting": "8.0.0"
         },
         "runtime": {

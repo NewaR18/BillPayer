@@ -226,6 +226,10 @@
               "target": "Package",
               "version": "[4.3.0, )"
             },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
             "Serilog.Extensions.Hosting": {
               "target": "Package",
               "version": "[8.0.0, )"

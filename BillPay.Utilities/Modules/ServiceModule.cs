@@ -12,6 +12,7 @@ using BillPay.Utilities.RolesAndMenus;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.DependencyInjection;
+using Scrutor;
 using Serilog;
 using Serilog.Extensions.Hosting;
 using System;
@@ -27,14 +28,25 @@ namespace BillPay.Utilities.Modules
         public static void RegisterModule(this IServiceCollection services)
         {
             services.AddSingleton<IEmailSender, EmailSender>();
+            /*services.AddTransient<AuthorizationMiddleware>();
+            services.AddTransient<ExceptionHandlingMiddleware>();*/
             services.AddScoped<IEmailFunctions, EmailFunctions>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddTransient<AuthorizationMiddleware>();
-			services.AddTransient<ExceptionHandlingMiddleware>();
-			services.AddScoped<IDbInitializer, DbInitializer>();
-            services.AddScoped<IdentityDbContext,AppDbContext>();
+            services.AddScoped<IdentityDbContext, AppDbContext>();
+            services.AddScoped<IDbInitializer, DbInitializer>();
             services.AddScoped<CheckMenus>();
             services.AddScoped<EmailJob>();
+            services.Scan(selector => selector
+                .FromAssemblies(
+                    typeof(AuthorizationMiddleware).Assembly
+                    ) 
+                .AddClasses(
+                    filter => filter.Where(x => x.Name.EndsWith("Middleware")),
+                    publicOnly: false)
+                .UsingRegistrationStrategy(RegistrationStrategy.Throw)
+                .AsSelf()
+                .WithTransientLifetime());
+
         }
     }
 }
