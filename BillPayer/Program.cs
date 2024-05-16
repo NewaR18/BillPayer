@@ -57,12 +57,11 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-SeedDatabase();
+app.ApplyMigrationAndAddControllersToMenu();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseSerilogRequestLogging(
@@ -74,7 +73,9 @@ app.UseSerilogRequestLogging(
 app.UseSerilogUi();
 app.UseHangfireDashboard();
 app.MapHangfireDashboard();
-InitiateMailSchedule();
+var env = app.Environment;
+app.RunWithProgramStart(env);
+app.StartHangfireSchedule();
 app.UseMiddleware<AuthorizationMiddleware>();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.MapControllerRoute(
@@ -82,20 +83,3 @@ app.MapControllerRoute(
     pattern: "{area=Bills}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-
-void SeedDatabase()
-{
-    using (var scope = app.Services.CreateScope())
-    {
-        var dbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
-        dbInitializer.Initialize();
-    }
-}
-void InitiateMailSchedule()
-{
-    using (var scope = app.Services.CreateScope())
-    {
-        var emailJob = scope.ServiceProvider.GetRequiredService<EmailJob>();
-        emailJob.SendEmailDaily();
-    }
-}

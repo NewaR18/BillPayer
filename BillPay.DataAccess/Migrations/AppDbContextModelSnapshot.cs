@@ -90,6 +90,40 @@ namespace BillPay.DataAccess.Migrations
                     b.ToTable("Menu");
                 });
 
+            modelBuilder.Entity("BillPay.Models.ProcedureSeedingLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ErrorMessage")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime>("ExecutedDatetime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("HasError")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ProcedureName")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("ScriptHash")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProcedureSeedingLog");
+                });
+
             modelBuilder.Entity("BillPay.Models.Product", b =>
                 {
                     b.Property<int>("Id")

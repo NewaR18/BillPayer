@@ -22,5 +22,6 @@ namespace BillPay.DataAccess.Data
         public DbSet<BillSummary> BillSummary { get; set; }
         public DbSet<Bhukkads> Bhukkads { get; set; }
         public DbSet<ProductDetails> ProductDetails { get; set; }
+        public DbSet<ProcedureSeedingLog> ProcedureSeedingLog { get; set; }
     }
 }
