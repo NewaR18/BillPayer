@@ -137,6 +137,10 @@
       "PackagePath": "staticwebassets\\lib\\Fontawesome\\fontawesome.min.css"
     },
     {
+      "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\Chart.min.js",
+      "PackagePath": "staticwebassets\\lib\\JS\\Chart.min.js"
+    },
+    {
       "Id": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\feather.min.js",
       "PackagePath": "staticwebassets\\lib\\JS\\feather.min.js"
     },

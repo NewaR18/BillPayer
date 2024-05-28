@@ -44,9 +44,33 @@
           }
         }
       },
+      "AspNetCore.HealthChecks.UI.Client/8.0.1": {
+        "dependencies": {
+          "AspNetCore.HealthChecks.UI.Core": "8.0.1",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/HealthChecks.UI.Client.dll": {
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.0"
+          }
+        }
+      },
+      "AspNetCore.HealthChecks.UI.Core/8.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/HealthChecks.UI.Core.dll": {
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.0"
+          }
+        }
+      },
       "Azure.Core/1.35.0": {
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
           "System.Diagnostics.DiagnosticSource": "8.0.0",
           "System.Memory.Data": "1.0.2",
           "System.Numerics.Vectors": "4.5.0",
@@ -754,7 +778,7 @@
       "MessagePack/2.1.152": {
         "dependencies": {
           "MessagePack.Annotations": "2.1.152",
-          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
           "System.Memory": "4.5.5",
           "System.Reflection.Emit": "4.6.0",
           "System.Reflection.Emit.Lightweight": "4.6.0",
@@ -1019,11 +1043,11 @@
           "System.Text.Encodings.Web": "8.0.0"
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
           }
         }
       },
@@ -1415,7 +1439,7 @@
       "Microsoft.CodeAnalysis.Workspaces.Common/4.0.0": {
         "dependencies": {
           "Humanizer.Core": "2.14.1",
-          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
           "Microsoft.CodeAnalysis.Common": "4.0.0",
           "System.Composition": "1.0.31",
           "System.IO.Pipelines": "5.0.1"
@@ -1726,6 +1750,29 @@
           }
         }
       },
+      "Microsoft.Extensions.Diagnostics.HealthChecks/8.0.0": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53112"
+          }
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/8.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53112"
+          }
+        }
+      },
       "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0"
@@ -1988,7 +2035,7 @@
         "dependencies": {
           "MessagePack": "2.1.152",
           "MessagePackAnalyzer": "2.1.152",
-          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
           "System.Collections.Immutable": "6.0.0"
         },
         "runtime": {
@@ -3501,6 +3548,7 @@
       },
       "BillPay.Utilities/1.0.0": {
         "dependencies": {
+          "AspNetCore.HealthChecks.UI.Client": "8.0.1",
           "BillPay.DataAccess": "1.0.0",
           "Hangfire": "1.8.12",
           "Hangfire.AspNetCore": "1.8.12",
@@ -3529,6 +3577,20 @@
       "sha512": "sha512-RemnImQf/BWR8oYqFpdw+hn+b4Q1w+pGujkRiSfjQhMPuiERwGn4UMmQv+6UDE4qbPlnIN+e3e40JkvBhzgfzg==",
       "path": "ardalis.guardclauses/4.0.1",
       "hashPath": "ardalis.guardclauses.4.0.1.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.UI.Client/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nhC6KIoB/EtTbH3uGm2J6EHEUyTJuETUARFePbmrnA+zjbwsirzIVUQl46qIjvyPABhK0e7Rk+AxcRqC6zikqA==",
+      "path": "aspnetcore.healthchecks.ui.client/8.0.1",
+      "hashPath": "aspnetcore.healthchecks.ui.client.8.0.1.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.UI.Core/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vn00MOJ1I0HSqyP7Bt9v0pr0AIgbrXMjL/KFwW+sRwLRogOtep8BWGimd8XYRCbCDLrAi7VSArU02f6pEIw69w==",
+      "path": "aspnetcore.healthchecks.ui.core/8.0.1",
+      "hashPath": "aspnetcore.healthchecks.ui.core.8.0.1.nupkg.sha512"
     },
     "Azure.Core/1.35.0": {
       "type": "package",
@@ -4195,12 +4257,12 @@
       "path": "microsoft.aspnetcore.webutilities/2.2.0",
       "hashPath": "microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512"
     },
-    "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+    "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
-      "path": "microsoft.bcl.asyncinterfaces/5.0.0",
-      "hashPath": "microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512"
+      "sha512": "sha512-3WA9q9yVqJp222P3x1wYIGDAkpjAku0TMUaaQV22g6L67AI0LdOIrVS7Ht2vJfLHGSPVuqN94vIr15qn+HEkHw==",
+      "path": "microsoft.bcl.asyncinterfaces/8.0.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512"
     },
     "Microsoft.Build/17.3.2": {
       "type": "package",
@@ -4432,6 +4494,20 @@
       "sha512": "sha512-JHYCQG7HmugNYUhOl368g+NMxYE/N/AiclCYRNlgCY9eVyiBkOHMwK4x60RYMxv9EL3+rmj1mqHvdCiPpC+D4Q==",
       "path": "microsoft.extensions.diagnostics.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Diagnostics.HealthChecks/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P9SoBuVZhJPpALZmSq72aQEb9ryP67EdquaCZGXGrrcASTNHYdrUhnpgSwIipgM5oVC+dKpRXg5zxobmF9xr5g==",
+      "path": "microsoft.extensions.diagnostics.healthchecks/8.0.0",
+      "hashPath": "microsoft.extensions.diagnostics.healthchecks.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AT2qqos3IgI09ok36Qag9T8bb6kHJ3uT9Q5ki6CySybFsK6/9JbvQAgAHf1pVEjST0/N4JaFaCbm40R5edffwg==",
+      "path": "microsoft.extensions.diagnostics.healthchecks.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.diagnostics.healthchecks.abstractions.8.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
       "type": "package",

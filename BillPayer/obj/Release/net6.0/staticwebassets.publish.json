@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o4Cc1ICnpJbVV4hv8I2PpRftKJlncE+fzyLUB6PZ9XM=",
+  "Hash": "veOybfxcQcgEAnmOoGH1qiDMKrEvvet9WUMurQPVnng=",
   "Source": "BillPayer",
   "BasePath": "_content/BillPayer",
   "Mode": "Default",
@@ -2616,6 +2616,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\Chart.min.js",
+      "SourceId": "BillPayer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\",
+      "BasePath": "_content/BillPayer",
+      "RelativePath": "lib/JS/Chart.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\JS\\Chart.min.js"
     },
     {
       "Identity": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\feather.min.js",

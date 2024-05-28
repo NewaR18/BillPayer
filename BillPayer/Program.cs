@@ -3,12 +3,15 @@ using BillPay.DataAccess.DbInitializers;
 using BillPay.Models;
 using BillPay.Models.ViewModels;
 using BillPay.Utilities.BackgroundJobs.RecurringJobs;
+using BillPay.Utilities.CommonMethods;
 using BillPay.Utilities.ExceptionHandling;
 using BillPay.Utilities.Middleware;
 using BillPay.Utilities.Modules;
 using Hangfire;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Serilog;
 using Serilog.Ui.MsSqlServerProvider;
 using Serilog.Ui.Web;
@@ -47,8 +50,11 @@ builder.Services.Configure<MailDetailsViewModel>(builder.Configuration.GetSectio
 //    googleOptions.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
 //});
 builder.Services.ConfigureApplicationCookie(options => options.LoginPath = "/AccountManager/Account/LogIn");
+builder.Services.AddHealthChecks().AddCheck<SqlHealthCheck>(
+        "Sql",
+        failureStatus: HealthStatus.Degraded,
+        tags: new[] { "Sql" }); ;
 var app = builder.Build();
-// app.UseSerilogRequestLogging();
 Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NAaF1cXmhIfEx1RHxQdld5ZFRHallYTnNWUj0eQnxTdEFjW31XcHBRQGNYWUd0Xw==");
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -78,6 +84,10 @@ app.RunWithProgramStart(env);
 app.StartHangfireSchedule();
 app.UseMiddleware<AuthorizationMiddleware>();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
+app.MapHealthChecks("/healthz", new HealthCheckOptions
+{
+    ResponseWriter = ResponseDesign.WriteResponse
+});
 app.MapControllerRoute(
     name: "default",
     pattern: "{area=Bills}/{controller=Home}/{action=Index}/{id?}");
