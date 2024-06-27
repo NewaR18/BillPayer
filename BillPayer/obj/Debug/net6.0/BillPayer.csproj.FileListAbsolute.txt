@@ -287,7 +287,6 @@ C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\static
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\scopedcss\bundle\BillPayer.styles.css
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\scopedcss\projectbundle\BillPayer.bundle.scp.css
-C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\BillPayer.csproj.CopyComplete
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\BillPayer.dll
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\refint\BillPayer.dll
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\BillPayer.pdb
@@ -341,3 +340,5 @@ C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\Health
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\HealthChecks.UI.Core.dll
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\BillPayer.sourcelink.json
+C:\Users\sudip.shrestha\source\repos\BillPayer\BillPayer\obj\Debug\net6.0\BillPayer.csproj.Up2Date

@@ -1,0 +1,404 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|solutionrelative:billpayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpayer\\areas\\accountmanager\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|solutionrelative:billpayer\\areas\\accountmanager\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.utilities\\modules\\seedingmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|solutionrelative:billpay.utilities\\modules\\seedingmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpayer\\areas\\bills\\controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|solutionrelative:billpayer\\areas\\bills\\controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E2BA89-6470-4EEB-B7FE-220D80FB8281}|BillPay.DataAccess\\BillPay.DataAccess.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.dataaccess\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58E2BA89-6470-4EEB-B7FE-220D80FB8281}|BillPay.DataAccess\\BillPay.DataAccess.csproj|solutionrelative:billpay.dataaccess\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpayer\\areas\\bills\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|solutionrelative:billpayer\\areas\\bills\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpayer\\areas\\bills\\views\\bill\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|solutionrelative:billpayer\\areas\\bills\\views\\bill\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpayer\\wwwroot\\lib\\js\\chart.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|solutionrelative:billpayer\\wwwroot\\lib\\js\\chart.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.utilities\\commonmethods\\responsedesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|solutionrelative:billpay.utilities\\commonmethods\\responsedesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.utilities\\middleware\\sqlhealthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|solutionrelative:billpay.utilities\\middleware\\sqlhealthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.utilities\\modules\\startscheduler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|solutionrelative:billpay.utilities\\modules\\startscheduler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.utilities\\modules\\servicemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|solutionrelative:billpay.utilities\\modules\\servicemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.utilities\\exceptionhandling\\enricher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|solutionrelative:billpay.utilities\\exceptionhandling\\enricher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpayer\\areas\\bills\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|solutionrelative:billpayer\\areas\\bills\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|solutionrelative:billpayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.utilities\\backgroundjobs\\recurringjobs\\emailjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|solutionrelative:billpay.utilities\\backgroundjobs\\recurringjobs\\emailjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.utilities\\commonmethods\\textextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|solutionrelative:billpay.utilities\\commonmethods\\textextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.utilities\\billpay.utilities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|solutionrelative:billpay.utilities\\billpay.utilities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpayer\\billpayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F04C9CDD-7455-42D7-9B00-0531A5E4233D}|BillPayer\\BillPayer.csproj|solutionrelative:billpayer\\billpayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E2BA89-6470-4EEB-B7FE-220D80FB8281}|BillPay.DataAccess\\BillPay.DataAccess.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.dataaccess\\billpay.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{58E2BA89-6470-4EEB-B7FE-220D80FB8281}|BillPay.DataAccess\\BillPay.DataAccess.csproj|solutionrelative:billpay.dataaccess\\billpay.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1860C0-6A1F-43CC-AB7F-B6B47E1FC65F}|BillPay.Models\\BillPay.Models.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.models\\procedureseedinglog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1860C0-6A1F-43CC-AB7F-B6B47E1FC65F}|BillPay.Models\\BillPay.Models.csproj|solutionrelative:billpay.models\\procedureseedinglog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.utilities\\middleware\\authorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|solutionrelative:billpay.utilities\\middleware\\authorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|c:\\users\\sudip.shrestha\\source\\repos\\billpayer\\billpay.utilities\\commonmethods\\emailfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB09D688-3F5B-46AE-8B8E-1642F52B8CD5}|BillPay.Utilities\\BillPay.Utilities.csproj|solutionrelative:billpay.utilities\\commonmethods\\emailfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 314,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Areas\\AccountManager\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BillPayer\\Areas\\AccountManager\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Areas\\AccountManager\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BillPayer\\Areas\\AccountManager\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T10:08:21.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SqlHealthCheck.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\Middleware\\SqlHealthCheck.cs",
+              "RelativeDocumentMoniker": "BillPay.Utilities\\Middleware\\SqlHealthCheck.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\Middleware\\SqlHealthCheck.cs",
+              "RelativeToolTip": "BillPay.Utilities\\Middleware\\SqlHealthCheck.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAuwBoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T10:22:16.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Program.cs",
+              "RelativeDocumentMoniker": "BillPayer\\Program.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Program.cs",
+              "RelativeToolTip": "BillPayer\\Program.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAAE8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T10:41:15.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Enricher.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\ExceptionHandling\\Enricher.cs",
+              "RelativeDocumentMoniker": "BillPay.Utilities\\ExceptionHandling\\Enricher.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\ExceptionHandling\\Enricher.cs",
+              "RelativeToolTip": "BillPay.Utilities\\ExceptionHandling\\Enricher.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAYwBAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T12:08:20.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Areas\\Bills\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BillPayer\\Areas\\Bills\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Areas\\Bills\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BillPayer\\Areas\\Bills\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAJAAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T06:33:02.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.DataAccess\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BillPay.DataAccess\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.DataAccess\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "BillPay.DataAccess\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T05:25:23.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SeedingModule.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\Modules\\SeedingModule.cs",
+              "RelativeDocumentMoniker": "BillPay.Utilities\\Modules\\SeedingModule.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\Modules\\SeedingModule.cs",
+              "RelativeToolTip": "BillPay.Utilities\\Modules\\SeedingModule.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAmwBQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T11:55:27.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Areas\\Bills\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BillPayer\\Areas\\Bills\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Areas\\Bills\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BillPayer\\Areas\\Bills\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAiwH4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T09:56:05.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BillController.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Areas\\Bills\\Controllers\\BillController.cs",
+              "RelativeDocumentMoniker": "BillPayer\\Areas\\Bills\\Controllers\\BillController.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Areas\\Bills\\Controllers\\BillController.cs",
+              "RelativeToolTip": "BillPayer\\Areas\\Bills\\Controllers\\BillController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T07:43:12.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Areas\\Bills\\Views\\Bill\\Create.cshtml",
+              "RelativeDocumentMoniker": "BillPayer\\Areas\\Bills\\Views\\Bill\\Create.cshtml",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\Areas\\Bills\\Views\\Bill\\Create.cshtml",
+              "RelativeToolTip": "BillPayer\\Areas\\Bills\\Views\\Bill\\Create.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T07:41:49.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResponseDesign.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\CommonMethods\\ResponseDesign.cs",
+              "RelativeDocumentMoniker": "BillPay.Utilities\\CommonMethods\\ResponseDesign.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\CommonMethods\\ResponseDesign.cs",
+              "RelativeToolTip": "BillPay.Utilities\\CommonMethods\\ResponseDesign.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAuwDUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T10:33:22.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Chart.min.js",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\Chart.min.js",
+              "RelativeDocumentMoniker": "BillPayer\\wwwroot\\lib\\JS\\Chart.min.js",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\wwwroot\\lib\\JS\\Chart.min.js",
+              "RelativeToolTip": "BillPayer\\wwwroot\\lib\\JS\\Chart.min.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-27T09:29:33.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StartScheduler.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\Modules\\StartScheduler.cs",
+              "RelativeDocumentMoniker": "BillPay.Utilities\\Modules\\StartScheduler.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\Modules\\StartScheduler.cs",
+              "RelativeToolTip": "BillPay.Utilities\\Modules\\StartScheduler.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T04:59:42.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ServiceModule.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\Modules\\ServiceModule.cs",
+              "RelativeDocumentMoniker": "BillPay.Utilities\\Modules\\ServiceModule.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\Modules\\ServiceModule.cs",
+              "RelativeToolTip": "BillPay.Utilities\\Modules\\ServiceModule.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAC8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T11:41:48.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmailJob.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\BackgroundJobs\\RecurringJobs\\EmailJob.cs",
+              "RelativeDocumentMoniker": "BillPay.Utilities\\BackgroundJobs\\RecurringJobs\\EmailJob.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\BackgroundJobs\\RecurringJobs\\EmailJob.cs",
+              "RelativeToolTip": "BillPay.Utilities\\BackgroundJobs\\RecurringJobs\\EmailJob.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T12:07:55.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\appsettings.json",
+              "RelativeDocumentMoniker": "BillPayer\\appsettings.json",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\appsettings.json",
+              "RelativeToolTip": "BillPayer\\appsettings.json",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-14T10:41:32.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TextExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\CommonMethods\\TextExtensions.cs",
+              "RelativeDocumentMoniker": "BillPay.Utilities\\CommonMethods\\TextExtensions.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\CommonMethods\\TextExtensions.cs",
+              "RelativeToolTip": "BillPay.Utilities\\CommonMethods\\TextExtensions.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAArwAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T09:53:36.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BillPay.Utilities.csproj",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\BillPay.Utilities.csproj",
+              "RelativeDocumentMoniker": "BillPay.Utilities\\BillPay.Utilities.csproj",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\BillPay.Utilities.csproj",
+              "RelativeToolTip": "BillPay.Utilities\\BillPay.Utilities.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-14T12:02:57.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BillPay.DataAccess.csproj",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.DataAccess\\BillPay.DataAccess.csproj",
+              "RelativeDocumentMoniker": "BillPay.DataAccess\\BillPay.DataAccess.csproj",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.DataAccess\\BillPay.DataAccess.csproj",
+              "RelativeToolTip": "BillPay.DataAccess\\BillPay.DataAccess.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-16T07:10:22.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BillPayer.csproj",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\BillPayer.csproj",
+              "RelativeDocumentMoniker": "BillPayer\\BillPayer.csproj",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPayer\\BillPayer.csproj",
+              "RelativeToolTip": "BillPayer\\BillPayer.csproj",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-14T12:07:30.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProcedureSeedingLog.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Models\\ProcedureSeedingLog.cs",
+              "RelativeDocumentMoniker": "BillPay.Models\\ProcedureSeedingLog.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Models\\ProcedureSeedingLog.cs",
+              "RelativeToolTip": "BillPay.Models\\ProcedureSeedingLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T09:40:31.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthorizationMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\Middleware\\AuthorizationMiddleware.cs",
+              "RelativeDocumentMoniker": "BillPay.Utilities\\Middleware\\AuthorizationMiddleware.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\Middleware\\AuthorizationMiddleware.cs",
+              "RelativeToolTip": "BillPay.Utilities\\Middleware\\AuthorizationMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T12:08:25.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EmailFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\CommonMethods\\EmailFunctions.cs",
+              "RelativeDocumentMoniker": "BillPay.Utilities\\CommonMethods\\EmailFunctions.cs",
+              "ToolTip": "C:\\Users\\sudip.shrestha\\source\\repos\\BillPayer\\BillPay.Utilities\\CommonMethods\\EmailFunctions.cs",
+              "RelativeToolTip": "BillPay.Utilities\\CommonMethods\\EmailFunctions.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T12:08:03.548Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
